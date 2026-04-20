@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="description" content="Tra cứu ghế khách mời nhanh trên điện thoại" />
+  <title>Tra cứu ghế khách mời</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="hero">
+      <div class="badge">Dùng trên điện thoại</div>
+      <h1>Tra cứu ghế khách mời</h1>
+      <p class="subtitle">Nhập tên khách mời để xem ngay số ghế. Hỗ trợ tìm không dấu, viết hoa/thường, và một phần tên.</p>
+    </header>
+
+    <main class="card">
+      <label for="searchInput" class="label">Tên khách mời</label>
+      <div class="search-row">
+        <input id="searchInput" type="search" inputmode="search" autocomplete="off" placeholder="Ví dụ: To Lam, Nguyen Tan Cuong..." />
+        <button id="clearBtn" type="button" aria-label="Xóa nội dung">Xóa</button>
+      </div>
+
+      <div class="helper-row">
+        <span id="recordCount"></span>
+        <button id="installBtn" class="secondary hidden" type="button">Cài ra màn hình chính</button>
+      </div>
+
+      <section id="featuredResult" class="featured hidden" aria-live="polite"></section>
+
+      <section class="results-wrap">
+        <div class="section-title">Kết quả phù hợp</div>
+        <div id="emptyState" class="empty">Gõ tên để bắt đầu tra cứu.</div>
+        <div id="results" class="results"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div><strong>Mẹo:</strong> Có thể gõ không dấu, ví dụ <em>to lam</em> hoặc <em>nguyen tan cuong</em>.</div>
+      <div id="offlineStatus" class="offline-status"></div>
+    </footer>
+  </div>
+
+  <script src="guests.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
