@@ -1,5 +1,5 @@
 
-const CACHE_NAME = "guest-seat-lookup-v2";
+const CACHE_NAME = "guest-seat-lookup-v4";
 const ASSETS = [
   "./",
   "./index.html",
