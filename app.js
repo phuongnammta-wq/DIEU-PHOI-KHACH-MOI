@@ -118,14 +118,24 @@ function searchGuests(query) {
     });
 }
 
-function renderFeatured(guest) {
+function renderFeatured(guest, query = "") {
   if (!guest) {
-    els.featuredResult.classList.add("hidden");
-    els.featuredResult.innerHTML = "";
+    const cleanQuery = query.trim();
+    els.featuredResult.classList.add("is-empty");
+    els.featuredResult.innerHTML = `
+      <div class="featured-topline">Kết quả nổi bật</div>
+      <div class="featured-empty">
+        <div class="featured-empty-seat">?</div>
+        <div>
+          <div class="featured-empty-title">${cleanQuery ? "Chưa tìm thấy khách mời phù hợp" : "Kết quả sẽ hiện ở đây"}</div>
+          <div class="featured-empty-text">${cleanQuery ? `Không có kết quả cho “${escapeHtml(cleanQuery)}”. Hãy thử gõ ít ký tự hơn hoặc bỏ dấu tiếng Việt.` : "Gõ tên khách mời, hệ thống sẽ lọc ngay và giữ kết quả nổi bật ở phía trên để bạn xem ghế nhanh, không bị nhảy màn hình."}</div>
+        </div>
+      </div>
+    `;
     return;
   }
 
-  els.featuredResult.classList.remove("hidden");
+  els.featuredResult.classList.remove("is-empty");
   els.featuredResult.innerHTML = `
     <div class="featured-topline">Kết quả nổi bật</div>
     <div class="featured-layout">
@@ -155,7 +165,7 @@ function renderResults(matches, query) {
     els.sectionSubtitle.textContent = cleanQuery
       ? `Không tìm thấy kết quả cho “${cleanQuery}”.`
       : "Chưa có dữ liệu để hiển thị.";
-    renderFeatured(null);
+    renderFeatured(null, query);
     return;
   }
 
@@ -168,7 +178,7 @@ function renderResults(matches, query) {
   }
 
   const activeGuest = matches.find((guest) => guest.id === selectedGuestId) || matches[0] || null;
-  renderFeatured(activeGuest);
+  renderFeatured(activeGuest, query);
 
   matches.forEach((guest) => {
     const card = document.createElement("article");
@@ -196,25 +206,14 @@ function renderResults(matches, query) {
   });
 }
 
-let lastAutoFocusKey = "";
-
 function onSearch() {
   const query = els.input.value || "";
   if (!query.trim()) {
     selectedGuestId = null;
-    lastAutoFocusKey = "";
   }
   const matches = searchGuests(query);
   renderResults(matches, query);
 
-  const topMatch = matches[0];
-  const queryKey = `${normalizeText(query)}::${topMatch ? topMatch.id : "none"}`;
-  if (query.trim() && topMatch && queryKey !== lastAutoFocusKey) {
-    lastAutoFocusKey = queryKey;
-    window.requestAnimationFrame(() => {
-      els.featuredResult.scrollIntoView({ behavior: "smooth", block: "start" });
-    });
-  }
 }
 
 async function copyText(value, label) {
@@ -242,8 +241,7 @@ function focusGuestCard(guestId) {
   const guest = currentMatches.find((item) => item.id === guestId);
   renderResults(currentMatches, els.input.value || "");
   if (guest) {
-    renderFeatured(guest);
-    els.featuredResult.scrollIntoView({ behavior: "smooth", block: "start" });
+    renderFeatured(guest, els.input.value || "");
   }
 }
 

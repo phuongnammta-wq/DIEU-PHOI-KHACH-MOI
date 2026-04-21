@@ -23,28 +23,30 @@
     </header>
 
     <main>
-      <section class="search-panel search-panel-priority">
-        <label for="searchInput" class="label">Tìm theo tên khách mời</label>
-        <div class="search-row">
-          <div class="input-wrap">
-            <span class="search-icon" aria-hidden="true">🔎</span>
-            <input id="searchInput" type="search" inputmode="search" autocomplete="off" placeholder="Nhập tên, ví dụ: Nguyễn Tấn Ý..." />
+      <section class="top-stack" aria-label="Tra cứu nhanh">
+        <section id="featuredResult" class="featured featured-priority" aria-live="polite"></section>
+
+        <section class="search-panel search-panel-priority">
+          <label for="searchInput" class="label">Tìm theo tên khách mời</label>
+          <div class="search-row">
+            <div class="input-wrap">
+              <span class="search-icon" aria-hidden="true">🔎</span>
+              <input id="searchInput" type="search" inputmode="search" autocomplete="off" placeholder="Nhập tên, ví dụ: Nguyễn Tấn Ý..." />
+            </div>
+            <button id="clearBtn" type="button" aria-label="Xóa nội dung">Xóa</button>
           </div>
-          <button id="clearBtn" type="button" aria-label="Xóa nội dung">Xóa</button>
-        </div>
 
-        <div class="helper-row compact-helper-row">
-          <div id="recordCount" class="record-count"></div>
-          <button id="installBtn" class="secondary hidden" type="button">Cài ra màn hình chính</button>
-        </div>
+          <div class="helper-row compact-helper-row">
+            <div id="recordCount" class="record-count"></div>
+            <button id="installBtn" class="secondary hidden" type="button">Cài ra màn hình chính</button>
+          </div>
 
-        <div class="tip-row compact-tip-row">
-          <span class="tip-chip">Gõ không dấu vẫn tìm được</span>
-          <span class="tip-chip">Kết quả nổi bật hiện ngay phía trên danh sách</span>
-        </div>
+          <div class="tip-row compact-tip-row">
+            <span class="tip-chip">Gõ không dấu vẫn tìm được</span>
+            <span class="tip-chip">Kết quả nổi bật luôn nằm trên ô tìm kiếm</span>
+          </div>
+        </section>
       </section>
-
-      <section id="featuredResult" class="featured featured-priority hidden" aria-live="polite"></section>
 
       <section class="results-wrap">
         <div class="stats-inline stats-inline-bottom" aria-label="Thống kê nhanh">
