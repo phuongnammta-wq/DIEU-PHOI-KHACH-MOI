@@ -81,7 +81,7 @@ const els = {
 };
 
 els.totalGuests.textContent = guests.length;
-els.recordCount.textContent = `Tổng ${guests.length} khách mời`;
+els.recordCount.textContent = `Nhập tên để hiện ghế nhanh nhất`;
 
 let deferredPrompt = null;
 let selectedGuestId = null;
@@ -167,7 +167,7 @@ function renderResults(matches, query) {
     els.sectionSubtitle.textContent = `Đang hiển thị đầy đủ ${matches.length} khách mời.`;
   }
 
-  const activeGuest = matches.find((guest) => guest.id === selectedGuestId) || (cleanQuery ? matches[0] : null);
+  const activeGuest = matches.find((guest) => guest.id === selectedGuestId) || matches[0] || null;
   renderFeatured(activeGuest);
 
   matches.forEach((guest) => {
@@ -196,13 +196,25 @@ function renderResults(matches, query) {
   });
 }
 
+let lastAutoFocusKey = "";
+
 function onSearch() {
   const query = els.input.value || "";
   if (!query.trim()) {
     selectedGuestId = null;
+    lastAutoFocusKey = "";
   }
   const matches = searchGuests(query);
   renderResults(matches, query);
+
+  const topMatch = matches[0];
+  const queryKey = `${normalizeText(query)}::${topMatch ? topMatch.id : "none"}`;
+  if (query.trim() && topMatch && queryKey !== lastAutoFocusKey) {
+    lastAutoFocusKey = queryKey;
+    window.requestAnimationFrame(() => {
+      els.featuredResult.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }
 }
 
 async function copyText(value, label) {
@@ -231,7 +243,7 @@ function focusGuestCard(guestId) {
   renderResults(currentMatches, els.input.value || "");
   if (guest) {
     renderFeatured(guest);
-    els.featuredResult.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    els.featuredResult.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 }
 

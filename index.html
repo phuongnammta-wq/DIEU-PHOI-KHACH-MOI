@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <meta name="theme-color" content="#0f172a" />
+  <meta name="theme-color" content="#7a2e16" />
   <meta name="description" content="Tra cứu ghế khách mời 21.4 nhanh trên điện thoại" />
   <title>Tra cứu ghế khách mời 21.4</title>
   <link rel="manifest" href="manifest.webmanifest" />
@@ -17,19 +17,8 @@
       <div class="hero-head">
         <div>
           <h1>Tra cứu ghế khách mời 21.4</h1>
-          <p class="subtitle">Gõ tên là lọc ngay. Kết quả nổi bật luôn nằm trên cùng để nhìn ghế nhanh nhất.</p>
+          <p class="subtitle">Gõ tên là lọc ngay. Kết quả nổi bật luôn hiện ở phía trên để nhìn ghế nhanh hơn, trực quan hơn.</p>
         </div>
-      </div>
-
-      <div class="stats-inline" aria-label="Thống kê nhanh">
-        <article class="mini-stat">
-          <span class="mini-stat-label">Tổng khách mời</span>
-          <strong id="totalGuests" class="mini-stat-value">0</strong>
-        </article>
-        <article class="mini-stat">
-          <span class="mini-stat-label">Đang hiển thị</span>
-          <strong id="visibleGuests" class="mini-stat-value">0</strong>
-        </article>
       </div>
     </header>
 
@@ -51,13 +40,24 @@
 
         <div class="tip-row compact-tip-row">
           <span class="tip-chip">Gõ không dấu vẫn tìm được</span>
-          <span class="tip-chip">Chạm vào tên để xem ghế ngay</span>
+          <span class="tip-chip">Kết quả nổi bật hiện ngay phía trên danh sách</span>
         </div>
       </section>
 
       <section id="featuredResult" class="featured featured-priority hidden" aria-live="polite"></section>
 
       <section class="results-wrap">
+        <div class="stats-inline stats-inline-bottom" aria-label="Thống kê nhanh">
+          <article class="mini-stat">
+            <span class="mini-stat-label">Tổng khách mời</span>
+            <strong id="totalGuests" class="mini-stat-value">0</strong>
+          </article>
+          <article class="mini-stat">
+            <span class="mini-stat-label">Đang hiển thị</span>
+            <strong id="visibleGuests" class="mini-stat-value">0</strong>
+          </article>
+        </div>
+
         <div class="section-head compact-section-head">
           <div>
             <div class="section-title">Danh sách khách mời</div>
