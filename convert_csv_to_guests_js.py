@@ -1,30 +1,33 @@
-#!/usr/bin/env python3
 import csv
 import json
+import re
 from pathlib import Path
 
-CSV_FILE = Path("DANH_SACH_KHACH_MOI_TRA_CUU_GHE_ANH_HUNG.csv")
-OUTPUT_FILE = Path("guests.js")
+ROOT = Path(__file__).resolve().parent
+CSV_NAME = "DANH_SACH_KHACH_MOI_TRA_CUU_GHE_21_4.csv"
+OUT_NAME = "guests.js"
 
-def main():
-    guests = []
-    with CSV_FILE.open("r", encoding="utf-8-sig", newline="") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            rank_name = (row.get("rank_name") or "").strip()
-            position = (row.get("position") or "").strip()
-            seat = (row.get("seat") or "").strip()
-            if rank_name and seat:
-                guests.append({
-                    "rank_name": rank_name,
-                    "position": position,
-                    "seat": seat,
-                })
+def clean(value: str) -> str:
+    return re.sub(r"\s+", " ", (value or "").strip())
 
-    js = "window.GUESTS = " + json.dumps(guests, ensure_ascii=False, indent=2) + ";\n"
-    js += "window.EVENT_TITLE = 'Tra cứu ghế khách mời';\n"
-    OUTPUT_FILE.write_text(js, encoding="utf-8")
-    print(f"Đã tạo {OUTPUT_FILE} với {len(guests)} khách mời.")
+rows = []
+with open(ROOT / CSV_NAME, encoding="utf-8-sig", newline="") as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        rank_name = clean(row.get("rank_name", ""))
+        position = clean(row.get("position", ""))
+        seat = clean(row.get("seat", "")).upper()
+        if not rank_name or not seat:
+            continue
+        rows.append({
+            "rank_name": rank_name,
+            "position": position,
+            "seat": seat
+        })
 
-if __name__ == "__main__":
-    main()
+with open(ROOT / OUT_NAME, "w", encoding="utf-8") as f:
+    f.write("window.GUESTS = ")
+    json.dump(rows, f, ensure_ascii=False, indent=2)
+    f.write(";\n")
+
+print(f"Đã tạo {OUT_NAME} với {len(rows)} bản ghi.")

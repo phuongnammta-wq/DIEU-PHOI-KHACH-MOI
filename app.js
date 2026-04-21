@@ -1,27 +1,3 @@
-
-const guests = Array.isArray(window.GUESTS) ? window.GUESTS.map((item, index) => ({
-  id: index + 1,
-  ...item,
-  normalizedName: normalizeText(item.rank_name),
-  normalizedPosition: normalizeText(item.position || ""),
-  normalizedSeat: normalizeText(item.seat || "")
-})) : [];
-
-const els = {
-  input: document.getElementById("searchInput"),
-  clearBtn: document.getElementById("clearBtn"),
-  recordCount: document.getElementById("recordCount"),
-  results: document.getElementById("results"),
-  emptyState: document.getElementById("emptyState"),
-  featuredResult: document.getElementById("featuredResult"),
-  installBtn: document.getElementById("installBtn"),
-  offlineStatus: document.getElementById("offlineStatus")
-};
-
-els.recordCount.textContent = `Tổng ${guests.length} khách mời`;
-
-let deferredPrompt = null;
-
 function normalizeText(value) {
   return String(value || "")
     .normalize("NFD")
@@ -43,31 +19,76 @@ function escapeHtml(value) {
     .replaceAll("'", "&#39;");
 }
 
+function parseSeat(seat) {
+  const match = String(seat || "").match(/^([A-Z]+)(\d+)$/i);
+  if (!match) {
+    return { row: String(seat || ""), number: 0 };
+  }
+  return {
+    row: match[1].toUpperCase(),
+    number: Number(match[2])
+  };
+}
+
 function highlight(text, query) {
   const cleanQuery = query.trim();
   if (!cleanQuery) return escapeHtml(text);
 
-  const normalizedText = normalizeText(text);
   const normalizedQuery = normalizeText(cleanQuery);
-  if (!normalizedQuery) return escapeHtml(text);
-
   const words = normalizedQuery.split(" ").filter(Boolean);
   if (!words.length) return escapeHtml(text);
 
-  // Simpler highlight by whole-text fallback to original when indices are ambiguous due to diacritics.
-  // We preserve readability over perfect index mapping.
-  const originalWords = String(text).split(/(\s+)/);
-  return originalWords.map(token => {
-    const tokenNorm = normalizeText(token);
-    return words.some(word => tokenNorm.includes(word))
-      ? `<mark>${escapeHtml(token)}</mark>`
-      : escapeHtml(token);
-  }).join("");
+  return String(text)
+    .split(/(\s+)/)
+    .map((token) => {
+      const tokenNorm = normalizeText(token);
+      return words.some((word) => tokenNorm.includes(word))
+        ? `<mark>${escapeHtml(token)}</mark>`
+        : escapeHtml(token);
+    })
+    .join("");
 }
 
+const guests = Array.isArray(window.GUESTS)
+  ? window.GUESTS
+      .map((item, index) => ({
+        id: index + 1,
+        ...item,
+        normalizedName: normalizeText(item.rank_name),
+        normalizedPosition: normalizeText(item.position || ""),
+        normalizedSeat: normalizeText(item.seat || ""),
+        seatMeta: parseSeat(item.seat || "")
+      }))
+      .sort((a, b) => {
+        const rowCompare = a.seatMeta.row.localeCompare(b.seatMeta.row, "vi");
+        if (rowCompare !== 0) return rowCompare;
+        return a.seatMeta.number - b.seatMeta.number;
+      })
+  : [];
+
+const els = {
+  input: document.getElementById("searchInput"),
+  clearBtn: document.getElementById("clearBtn"),
+  recordCount: document.getElementById("recordCount"),
+  totalGuests: document.getElementById("totalGuests"),
+  visibleGuests: document.getElementById("visibleGuests"),
+  results: document.getElementById("results"),
+  emptyState: document.getElementById("emptyState"),
+  featuredResult: document.getElementById("featuredResult"),
+  installBtn: document.getElementById("installBtn"),
+  offlineStatus: document.getElementById("offlineStatus"),
+  sectionSubtitle: document.getElementById("sectionSubtitle")
+};
+
+els.totalGuests.textContent = guests.length;
+els.recordCount.textContent = `Tổng ${guests.length} khách mời`;
+
+let deferredPrompt = null;
+let selectedGuestId = null;
+
 function rankGuest(guest, q) {
-  const exactSeat = guest.normalizedSeat === q ? 100 : 0;
-  const exactName = guest.normalizedName === q ? 90 : 0;
+  const exactSeat = guest.normalizedSeat === q ? 120 : 0;
+  const exactName = guest.normalizedName === q ? 100 : 0;
   const startsName = guest.normalizedName.startsWith(q) ? 70 : 0;
   const includesName = guest.normalizedName.includes(q) ? 50 : 0;
   const includesPosition = guest.normalizedPosition.includes(q) ? 15 : 0;
@@ -76,17 +97,25 @@ function rankGuest(guest, q) {
 
 function searchGuests(query) {
   const q = normalizeText(query);
-  if (!q) return [];
+
+  if (!q) {
+    return guests.map((guest) => ({ ...guest, score: 0 }));
+  }
 
   return guests
-    .filter(guest =>
-      guest.normalizedName.includes(q) ||
-      guest.normalizedPosition.includes(q) ||
-      guest.normalizedSeat.includes(q)
+    .filter(
+      (guest) =>
+        guest.normalizedName.includes(q) ||
+        guest.normalizedPosition.includes(q) ||
+        guest.normalizedSeat.includes(q)
     )
-    .map(guest => ({ ...guest, score: rankGuest(guest, q) }))
-    .sort((a, b) => b.score - a.score || a.rank_name.localeCompare(b.rank_name, "vi"))
-    .slice(0, 30);
+    .map((guest) => ({ ...guest, score: rankGuest(guest, q) }))
+    .sort((a, b) => {
+      if (b.score !== a.score) return b.score - a.score;
+      const rowCompare = a.seatMeta.row.localeCompare(b.seatMeta.row, "vi");
+      if (rowCompare !== 0) return rowCompare;
+      return a.seatMeta.number - b.seatMeta.number;
+    });
 }
 
 function renderFeatured(guest) {
@@ -98,45 +127,70 @@ function renderFeatured(guest) {
 
   els.featuredResult.classList.remove("hidden");
   els.featuredResult.innerHTML = `
-    <div class="seat-pill">${escapeHtml(guest.seat)}</div>
-    <div class="name">${escapeHtml(guest.rank_name)}</div>
-    <div class="position">${escapeHtml(guest.position || "Không có chức vụ đi kèm")}</div>
-    <div class="actions">
-      <button type="button" class="action-btn" data-copy-seat="${escapeHtml(guest.seat)}">Sao chép ghế</button>
-      <button type="button" class="action-btn" data-copy-name="${escapeHtml(guest.rank_name)}">Sao chép tên</button>
+    <div class="featured-topline">Kết quả nổi bật</div>
+    <div class="featured-layout">
+      <div class="featured-seat-wrap">
+        <div class="seat-caption">Ghế</div>
+        <div class="seat-pill">${escapeHtml(guest.seat)}</div>
+      </div>
+      <div class="featured-info">
+        <div class="name">${escapeHtml(guest.rank_name)}</div>
+        <div class="position">${escapeHtml(guest.position || "Không có chức vụ đi kèm")}</div>
+        <div class="actions">
+          <button type="button" class="action-btn" data-copy-seat="${escapeHtml(guest.seat)}">Sao chép ghế</button>
+          <button type="button" class="action-btn" data-copy-name="${escapeHtml(guest.rank_name)}">Sao chép tên</button>
+        </div>
+      </div>
     </div>
   `;
 }
 
 function renderResults(matches, query) {
   els.results.innerHTML = "";
-
-  if (!query.trim()) {
-    els.emptyState.textContent = "Gõ tên để bắt đầu tra cứu.";
-    els.emptyState.hidden = false;
-    renderFeatured(null);
-    return;
-  }
+  const cleanQuery = query.trim();
+  els.visibleGuests.textContent = matches.length;
 
   if (!matches.length) {
-    els.emptyState.textContent = "Không tìm thấy khách mời phù hợp.";
     els.emptyState.hidden = false;
+    els.sectionSubtitle.textContent = cleanQuery
+      ? `Không tìm thấy kết quả cho “${cleanQuery}”.`
+      : "Chưa có dữ liệu để hiển thị.";
     renderFeatured(null);
     return;
   }
 
   els.emptyState.hidden = true;
-  renderFeatured(matches[0]);
 
-  matches.forEach(guest => {
+  if (cleanQuery) {
+    els.sectionSubtitle.textContent = `Tìm thấy ${matches.length} khách mời phù hợp với “${cleanQuery}”.`;
+  } else {
+    els.sectionSubtitle.textContent = `Đang hiển thị đầy đủ ${matches.length} khách mời.`;
+  }
+
+  const activeGuest = matches.find((guest) => guest.id === selectedGuestId) || (cleanQuery ? matches[0] : null);
+  renderFeatured(activeGuest);
+
+  matches.forEach((guest) => {
     const card = document.createElement("article");
-    card.className = "result-card";
+    const isActive = activeGuest && guest.id === activeGuest.id;
+    card.className = `result-card${isActive ? " active" : ""}`;
+    card.setAttribute("role", "button");
+    card.setAttribute("tabindex", "0");
+    card.dataset.id = String(guest.id);
+
     card.innerHTML = `
-      <div>
+      <div class="result-main">
+        <div class="result-meta-row">
+          <span class="row-badge">Dãy ${escapeHtml(guest.seatMeta.row)}</span>
+          <span class="tap-hint">Chạm để xem nhanh</span>
+        </div>
         <div class="name">${highlight(guest.rank_name, query)}</div>
         <div class="position">${escapeHtml(guest.position || "")}</div>
       </div>
-      <div class="seat">${escapeHtml(guest.seat)}</div>
+      <div class="seat-block">
+        <div class="seat-label">Ghế</div>
+        <div class="seat">${escapeHtml(guest.seat)}</div>
+      </div>
     `;
     els.results.appendChild(card);
   });
@@ -144,6 +198,9 @@ function renderResults(matches, query) {
 
 function onSearch() {
   const query = els.input.value || "";
+  if (!query.trim()) {
+    selectedGuestId = null;
+  }
   const matches = searchGuests(query);
   renderResults(matches, query);
 }
@@ -159,26 +216,57 @@ async function copyText(value, label) {
 
 function showStatus(message) {
   els.offlineStatus.textContent = message;
-  window.clearTimeout(showStatus._t);
-  showStatus._t = window.setTimeout(() => {
-    if (navigator.onLine) {
-      els.offlineStatus.textContent = "Có thể dùng offline sau khi mở app một lần.";
-    }
+  window.clearTimeout(showStatus._timer);
+  showStatus._timer = window.setTimeout(() => {
+    els.offlineStatus.textContent = navigator.onLine
+      ? "Có thể dùng offline sau khi mở app một lần."
+      : "Bạn đang offline. Ứng dụng vẫn dùng được.";
   }, 2200);
+}
+
+function focusGuestCard(guestId) {
+  selectedGuestId = guestId;
+  const currentMatches = searchGuests(els.input.value || "");
+  const guest = currentMatches.find((item) => item.id === guestId);
+  renderResults(currentMatches, els.input.value || "");
+  if (guest) {
+    renderFeatured(guest);
+    els.featuredResult.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }
 }
 
 els.input.addEventListener("input", onSearch);
 els.clearBtn.addEventListener("click", () => {
   els.input.value = "";
+  selectedGuestId = null;
   els.input.focus();
   onSearch();
 });
 
 document.addEventListener("click", (event) => {
   const btn = event.target.closest("button");
-  if (!btn) return;
-  if (btn.dataset.copySeat) copyText(btn.dataset.copySeat, "ghế");
-  if (btn.dataset.copyName) copyText(btn.dataset.copyName, "tên");
+  if (btn?.dataset.copySeat) {
+    copyText(btn.dataset.copySeat, "ghế");
+    return;
+  }
+  if (btn?.dataset.copyName) {
+    copyText(btn.dataset.copyName, "tên");
+    return;
+  }
+
+  const card = event.target.closest(".result-card");
+  if (card?.dataset.id) {
+    focusGuestCard(Number(card.dataset.id));
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  const card = event.target.closest?.(".result-card");
+  if (!card?.dataset.id) return;
+  if (event.key === "Enter" || event.key === " ") {
+    event.preventDefault();
+    focusGuestCard(Number(card.dataset.id));
+  }
 });
 
 window.addEventListener("beforeinstallprompt", (event) => {
