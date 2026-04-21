@@ -180,7 +180,7 @@ window.GUESTS = [
     "seat": "B17"
   },
   {
-    "rank_name": "ĐẠI BIỂU NGÔ CHÍ NGHUYỆN",
+    "rank_name": "ĐẠI BIỂU NGÔ CHÍ NGUYỆN",
     "position": "ANH HÙNG LỰC LƯỢNG VŨ TRANG NHÂN DÂN",
     "seat": "B18"
   },
