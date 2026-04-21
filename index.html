@@ -12,50 +12,53 @@
 </head>
 <body>
   <div class="app-shell">
-    <header class="hero">
+    <header class="hero compact-hero">
       <div class="badge">Bản tra cứu trên điện thoại</div>
-      <h1>Tra cứu ghế khách mời 21.4</h1>
-      <p class="subtitle">Mở ra là thấy toàn bộ danh sách. Chỉ cần gõ tên, hệ thống sẽ tự lọc ngay đến đúng khách mời và hiện ghế nổi bật ở phía trên.</p>
+      <div class="hero-head">
+        <div>
+          <h1>Tra cứu ghế khách mời 21.4</h1>
+          <p class="subtitle">Gõ tên là lọc ngay. Kết quả nổi bật luôn nằm trên cùng để nhìn ghế nhanh nhất.</p>
+        </div>
+      </div>
 
-      <div class="stats-grid">
-        <article class="stat-card">
-          <div class="stat-label">Tổng khách mời</div>
-          <div id="totalGuests" class="stat-value">0</div>
+      <div class="stats-inline" aria-label="Thống kê nhanh">
+        <article class="mini-stat">
+          <span class="mini-stat-label">Tổng khách mời</span>
+          <strong id="totalGuests" class="mini-stat-value">0</strong>
         </article>
-        <article class="stat-card">
-          <div class="stat-label">Đang hiển thị</div>
-          <div id="visibleGuests" class="stat-value">0</div>
+        <article class="mini-stat">
+          <span class="mini-stat-label">Đang hiển thị</span>
+          <strong id="visibleGuests" class="mini-stat-value">0</strong>
         </article>
       </div>
     </header>
 
     <main>
-      <section class="search-panel">
+      <section class="search-panel search-panel-priority">
         <label for="searchInput" class="label">Tìm theo tên khách mời</label>
         <div class="search-row">
           <div class="input-wrap">
             <span class="search-icon" aria-hidden="true">🔎</span>
-            <input id="searchInput" type="search" inputmode="search" autocomplete="off" placeholder="Nhập tên, ví dụ: To Lam, Phan Van Giang..." />
+            <input id="searchInput" type="search" inputmode="search" autocomplete="off" placeholder="Nhập tên, ví dụ: Nguyễn Tấn Ý..." />
           </div>
           <button id="clearBtn" type="button" aria-label="Xóa nội dung">Xóa</button>
         </div>
 
-        <div class="helper-row">
+        <div class="helper-row compact-helper-row">
           <div id="recordCount" class="record-count"></div>
           <button id="installBtn" class="secondary hidden" type="button">Cài ra màn hình chính</button>
         </div>
 
-        <div class="tip-row">
+        <div class="tip-row compact-tip-row">
           <span class="tip-chip">Gõ không dấu vẫn tìm được</span>
-          <span class="tip-chip">Hiện toàn bộ danh sách ngay từ đầu</span>
-          <span class="tip-chip">Chạm vào tên để xem nhanh ghế</span>
+          <span class="tip-chip">Chạm vào tên để xem ghế ngay</span>
         </div>
       </section>
 
-      <section id="featuredResult" class="featured hidden" aria-live="polite"></section>
+      <section id="featuredResult" class="featured featured-priority hidden" aria-live="polite"></section>
 
       <section class="results-wrap">
-        <div class="section-head">
+        <div class="section-head compact-section-head">
           <div>
             <div class="section-title">Danh sách khách mời</div>
             <div id="sectionSubtitle" class="section-subtitle">Đang hiển thị toàn bộ danh sách khách mời.</div>
@@ -68,7 +71,7 @@
     </main>
 
     <footer class="footer">
-      <div><strong>Mẹo:</strong> Có thể gõ không dấu, ví dụ <em>to lam</em>, <em>nguyen tan cuong</em> hoặc gõ một phần tên.</div>
+      <div><strong>Mẹo:</strong> Có thể gõ không dấu, ví dụ <em>nguyen tan y</em>, <em>to lam</em> hoặc chỉ gõ một phần tên.</div>
       <div id="offlineStatus" class="offline-status"></div>
     </footer>
   </div>
