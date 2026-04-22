@@ -10,43 +10,43 @@ window.GUESTS = [
     "seat": "A2"
   },
   {
-    "rank_name": "ĐẠI TƯỚNG LƯƠNG TAM QUANG",
-    "position": "ỦY VIÊN BCT, BỘ TRƯỞNG BỘ CÔNG AN",
+    "rank_name": "ĐẠI TƯỚNG NGÔ XUÂN LỊCH",
+    "position": "NGUYÊN BỘ TRƯỞNG BỘ QUỐC PHÒNG",
     "seat": "A4"
-  },
-  {
-    "rank_name": "ĐỒNG CHÍ BÙI THỊ MINH HOÀI",
-    "position": "ỦY VIÊN BCT, BÍ THƯ TRUNG ƯƠNG ĐẢNG CHỦ TỊCH UBTW MẶT TRẬN TỔ QUỐC V.NAM",
-    "seat": "A5"
-  },
-  {
-    "rank_name": "ĐẠI TƯỚNG NGUYỄN TRỌNG NGHĨA",
-    "position": "UV BỘ CHÍNH TRỊ, CHỦ NHIỆM TCCT QUÂN ĐỘI NHÂN DÂN VIỆT NAM",
-    "seat": "A6"
   },
   {
     "rank_name": "ĐỒNG CHÍ NGUYỄN DUY NGỌC",
     "position": "ỦY VIÊN BCT, BÍ THƯ TRUNG ƯƠNG ĐẢNG TRƯỞNG BAN TỔ CHỨC TRUNG ƯƠNG",
-    "seat": "A7"
+    "seat": "A5"
   },
   {
     "rank_name": "ĐỒNG CHÍ TRẦN SỸ THANH",
     "position": "ỦY VIÊN BCT, BÍ THƯ TRUNG ƯƠNG ĐẢNG CHỦ NHIỆM UBKT TW",
-    "seat": "A8"
+    "seat": "A6"
   },
   {
     "rank_name": "ĐỒNG CHÍ TRỊNH VĂN QUYẾT",
     "position": "ỦY VIÊN BCT, BÍ THƯ TRUNG ƯƠNG ĐẢNG TRƯỞNG BAN TUYÊN GIÁO VÀ DÂN VẬN TW",
-    "seat": "A9"
+    "seat": "A7"
   },
   {
-    "rank_name": "ĐỒNG CHÍ VÕ THỊ ÁNH XUÂN",
-    "position": "BÍ THƯ TW ĐẢNG, PHÓ CHỦ TỊCH NƯỚC CHXHCN VIỆT NAM",
-    "seat": "A10"
+    "rank_name": "ĐẠI TƯỚNG LƯƠNG TAM QUANG",
+    "position": "ỦY VIÊN BCT, BỘ TRƯỞNG BỘ CÔNG AN",
+    "seat": "A8"
   },
   {
     "rank_name": "ĐỒNG CHÍ LÊ MINH TRÍ",
     "position": "ỦY VIÊN BCT, BÍ THƯ TRUNG ƯƠNG ĐẢNG TRƯỞNG BAN NỘI CHÍNH TRUNG ƯƠNG",
+    "seat": "A9"
+  },
+  {
+    "rank_name": "ĐẠI TƯỚNG NGUYỄN TRỌNG NGHĨA",
+    "position": "UV BỘ CHÍNH TRỊ, CHỦ NHIỆM TCCT QUÂN ĐỘI NHÂN DÂN VIỆT NAM",
+    "seat": "A10"
+  },
+  {
+    "rank_name": "ĐỒNG CHÍ NGUYỄN THANH NGHỊ",
+    "position": "UV BCT, BÍ THƯ TWĐ, TRƯỞNG BAN CHÍNH SÁCH, CHIẾN LƯỢC TW",
     "seat": "A11"
   },
   {
@@ -55,8 +55,8 @@ window.GUESTS = [
     "seat": "A12"
   },
   {
-    "rank_name": "ĐỒNG CHÍ ĐOÀN MINH HUẤN",
-    "position": "UV BCT, GIÁM ĐỐC HỌC VIỆN CHÍNH TRỊ QUỐC GIA HỒ CHÍ MINH",
+    "rank_name": "THƯỢNG TƯỚNG NGUYỄN DOÃN ANH",
+    "position": "UỶ VIÊN BCHTW ĐẢNG, PHÓ CHỦ TỊCH QUỐC HỘI NƯỚC CHXHCN VN",
     "seat": "A13"
   },
   {
@@ -65,8 +65,8 @@ window.GUESTS = [
     "seat": "A14"
   },
   {
-    "rank_name": "ĐỒNG CHÍ NGUYỄN THANH NGHỊ",
-    "position": "UV BCT, BÍ THƯ TWĐ, TRƯỞNG BAN CHÍNH SÁCH, CHIẾN LƯỢC TW",
+    "rank_name": "ĐẠI TƯỚNG NGUYỄN TÂN CƯƠNG",
+    "position": "UỶ VIÊN BCHTW ĐẢNG, TTMT, THỨ TRƯỞNG BỘ QUỐC PHÒNG",
     "seat": "A15"
   },
   {
@@ -75,8 +75,8 @@ window.GUESTS = [
     "seat": "A16"
   },
   {
-    "rank_name": "ĐẠI TƯỚNG NGUYỄN TÂN CƯƠNG",
-    "position": "UỶ VIÊN BCHTW ĐẢNG, TTMT, THỨ TRƯỞNG BỘ QUỐC PHÒNG",
+    "rank_name": "ĐỒNG CHÍ NGUYỄN HẢI NINH",
+    "position": "UỶ VIÊN BCHTW ĐẢNG, CHÁNH VĂN PHÒNG TRUNG ƯƠNG ĐẢNG",
     "seat": "A17"
   },
   {
@@ -85,8 +85,8 @@ window.GUESTS = [
     "seat": "A18"
   },
   {
-    "rank_name": "THƯỢNG TƯỚNG NGUYỄN DOÃN ANH",
-    "position": "UỶ VIÊN BCHTW ĐẢNG, PHÓ CHỦ TỊCH QUỐC HỘI NƯỚC CHXHCN VN",
+    "rank_name": "THƯỢNG TƯỚNG TRƯƠNG THIÊN TÔ",
+    "position": "UỶ VIÊN BCHTW ĐẢNG, PHÓ CHỦ NHIỆM TCCT QĐND VIỆT NAM",
     "seat": "A19"
   },
   {
@@ -110,38 +110,38 @@ window.GUESTS = [
     "seat": "B3"
   },
   {
-    "rank_name": "ĐỒNG CHÍ NGUYỄN HẢI NINH",
-    "position": "UỶ VIÊN BCHTW ĐẢNG, CHÁNH VĂN PHÒNG TRUNG ƯƠNG ĐẢNG",
+    "rank_name": "THƯỢNG TƯỚNG TRƯƠNG QUANG KHÁNH",
+    "position": "NGUYÊN THỨ TRƯỞNG BQP",
     "seat": "B4"
   },
   {
-    "rank_name": "THƯỢNG TƯỚNG TRƯƠNG THIÊN TÔ",
-    "position": "UỶ VIÊN BCHTW ĐẢNG, PHÓ CHỦ NHIỆM TCCT QĐND VIỆT NAM",
+    "rank_name": "TRUNG TƯỚNG NGUYỄN TRUNG THU",
+    "position": "NGUYÊN PHÓ TỔNG TMT QĐNDVN",
     "seat": "B5"
   },
   {
-    "rank_name": "ĐỒNG CHÍ ĐỖ THANH BÌNH",
-    "position": "UỶ VIÊN BCHTW ĐẢNG, BỘ TRƯỞNG BỘ NỘI VỤ",
+    "rank_name": "THƯỢNG TƯỚNG LÊ CHIÊM",
+    "position": "NGUYÊN THỨ TRƯỞNG BỘ QUỐC PHÒNG",
     "seat": "B6"
+  },
+  {
+    "rank_name": "THƯỢNG TƯỚNG VÕ TIẾN TRUNG",
+    "position": "NGUYÊN GIÁM ĐỐC HỌC VIỆN QUỐC PHÒNG",
+    "seat": "B7"
+  },
+  {
+    "rank_name": "ĐỒNG CHÍ LÊ NGỌC QUANG",
+    "position": "UỶ VIÊN BCHTW ĐẢNG, BÍ THƯ THÀNH ỦY ĐÀ NẴNG",
+    "seat": "B8"
   },
   {
     "rank_name": "TRUNG TƯỚNG TIÊU VĂN MẪN",
     "position": "NGUYÊN PHÓ TƯ LỆNH VỀ CHÍNH TRỊ",
-    "seat": "B7"
-  },
-  {
-    "rank_name": "ĐỒNG CHÍ NGÔ VĂN TUẤN",
-    "position": "UỶ VIÊN BCHTW ĐẢNG, BỘ TRƯỞNG BỘ TÀI CHÍNH",
-    "seat": "B8"
-  },
-  {
-    "rank_name": "TRUNG TƯỚNG NGUYỄN THÀNH ÚT",
-    "position": "NGUYÊN PHÓ TƯ LỆNH VỀ CHÍNH TRỊ",
     "seat": "B9"
   },
   {
-    "rank_name": "ĐỒNG CHÍ TRỊNH VIỆT HÙNG",
-    "position": "UỶ VIÊN BCHTW ĐẢNG, BỘ TRƯỞNG BỘ NÔNG NGHIỆP VÀ MÔI TRƯỜNG",
+    "rank_name": "ĐỒNG CHÍ HỒ VĂN NIÊN",
+    "position": "UỶ VIÊN BCHTW ĐẢNG, BÍ THƯ TỈNH ỦY Q.NGÃI",
     "seat": "B10"
   },
   {
@@ -150,8 +150,8 @@ window.GUESTS = [
     "seat": "B11"
   },
   {
-    "rank_name": "ĐỒNG CHÍ TRẦN HỒNG MINH",
-    "position": "UỶ VIÊN BCHTW ĐẢNG, BỘ TRƯỞNG BỘ XÂY DỰNG",
+    "rank_name": "ĐỒNG CHÍ THÁI ĐẠI NGỌC",
+    "position": "UỶ VIÊN BCHTW ĐẢNG, BÍ THƯ TỈNH ỦY GIA LAI",
     "seat": "B12"
   },
   {
@@ -160,18 +160,18 @@ window.GUESTS = [
     "seat": "B13"
   },
   {
-    "rank_name": "ĐỒNG CHÍ PHẠM ĐỨC ẤN",
-    "position": "UỶ VIÊN BCHTW ĐẢNG, THỐNG ĐỐC NGÂN HÀNG NHÀ NƯỚC VIỆT NAM",
+    "rank_name": "ĐỒNG CHÍ LƯƠNG NGUYỄN MINH TRIẾT",
+    "position": "UỶ VIÊN BCHTW ĐẢNG, BÍ THƯ TỈNH ỦY ĐĂK LĂK",
     "seat": "B14"
   },
   {
     "rank_name": "TRUNG TƯỚNG TRỊNH ĐÌNH THẠCH",
-    "position": "NGUYÊN CHÍNH ỦY QUÂN KHU 5",
+    "position": "NGUYÊN CHÍNH ỦY QUÂN KHU",
     "seat": "B15"
   },
   {
-    "rank_name": "THƯỢNG TƯỚNG TRƯƠNG QUANG KHÁNH",
-    "position": "NGUYÊN THỨ TRƯỞNG BQP",
+    "rank_name": "ĐỒNG CHÍ TRẦN PHONG",
+    "position": "UỶ VIÊN BCHTW ĐẢNG, BÍ THƯ TỈNH ỦY KHÁNH HÒA",
     "seat": "B16"
   },
   {
@@ -195,43 +195,43 @@ window.GUESTS = [
     "seat": "B20"
   },
   {
-    "rank_name": "THIẾU TƯỚNG HỨA VĂN TƯỞNG",
-    "position": "PHÓ TƯ LỆNH QUÂN KHU",
+    "rank_name": "TRUNG TƯỚNG TRẦN MINH ĐỨC",
+    "position": "CHỦ NHIỆM TỔNG CỤC HC - KT",
     "seat": "C1"
   },
   {
-    "rank_name": "ĐỒNG CHÍ ĐẶNG KHÁNH TOÀN",
-    "position": "UỶ VIÊN BCHTW ĐẢNG, PHÓ CHÁNH VĂN PHÒNG TRUNG ƯƠNG ĐẢNG",
+    "rank_name": "ĐỒNG CHÍ NGUYỄN THỊ THU HÀ PHÓ VĂN PHÒNG TT VĂN PHÒNG TRUNG ƯƠNG ĐẢNG",
+    "position": "",
     "seat": "C2"
   },
   {
-    "rank_name": "THIẾU TƯỚNG TRẦN THANH HẢI",
-    "position": "PHÓ TƯ LỆNH QUÂN KHU",
+    "rank_name": "TRUNG TƯỚNG NGUYỄN VIẾT TUYÊN",
+    "position": "CHÁNH VĂN PHÒNG QUÂN ỦY TW VĂN PHÒNG BQP",
     "seat": "C3"
   },
   {
-    "rank_name": "THƯỢNG TƯỚNG LÊ CHIÊM",
-    "position": "NGUYÊN THỨ TRƯỞNG BỘ QUỐC PHÒNG",
+    "rank_name": "PHÓ ĐÔ ĐỐC TRẦN THANH NGHIÊM",
+    "position": "TƯ LỆNH QUÂN CHỦNG HẢI QUÂN",
     "seat": "C4"
   },
   {
-    "rank_name": "THIẾU TƯỚNG NGUYỄN QUỐC HƯƠNG",
-    "position": "PHÓ TƯ LỆNH QUÂN KHU",
+    "rank_name": "TRUNG TƯỚNG NGUYỄN VĂN HÙNG",
+    "position": "PHÓ CN UBKT QUÂN ỦY TW",
     "seat": "C5"
   },
   {
-    "rank_name": "THƯỢNG TƯỚNG VÕ TIẾN TRUNG",
-    "position": "NGUYÊN GIÁM ĐỐC HỌC VIỆN QUỐC PHÒNG",
+    "rank_name": "ĐỒNG CHÍ NGUYỄN MẠNH HÙNG",
+    "position": "PHÓ BÍ THƯ THÀNH ỦY CHỦ TỊCH UBND TP. ĐN",
     "seat": "C6"
   },
   {
-    "rank_name": "TRUNG TƯỚNG TRẦN PHƯỚC TỚI",
-    "position": "NGUYÊN PHÓ VIỆN TRƯỞNG VKSNDTC",
+    "rank_name": "TRUNG TƯỚNG NGUYỄN VĂN TUYÊN",
+    "position": "NGUYÊN PHÓ GIÁM ĐỐC HỌC VIỆN",
     "seat": "C7"
   },
   {
-    "rank_name": "TRUNG TƯỚNG NGUYỄN TRUNG THU",
-    "position": "NGUYÊN PHÓ TỔNG TMT QĐNDVN",
+    "rank_name": "ĐỒNG CHÍ NGUYỄN HOÀNG GIANG",
+    "position": "UỶ VIÊN BCHTW ĐẢNG, PHÓ BÍ THƯ TỈNH ỦY CHỦ TỊCH UBND T. QN",
     "seat": "C8"
   },
   {
@@ -240,8 +240,8 @@ window.GUESTS = [
     "seat": "C9"
   },
   {
-    "rank_name": "ĐỒNG CHÍ LÊ NGỌC QUANG",
-    "position": "UỶ VIÊN BCHTW ĐẢNG, BÍ THƯ THÀNH ỦY ĐÀ NẴNG",
+    "rank_name": "ĐỒNG CHÍ PHẠM ANH TUẤN",
+    "position": "UỶ VIÊN BCHTW ĐẢNG, PHÓ BÍ THƯ TỈNH ỦY CHỦ TỊCH UBND T. G.LAI",
     "seat": "C10"
   },
   {
@@ -250,8 +250,8 @@ window.GUESTS = [
     "seat": "C11"
   },
   {
-    "rank_name": "ĐỒNG CHÍ HỒ VĂN NIÊN",
-    "position": "UỶ VIÊN BCHTW ĐẢNG, BÍ THƯ TỈNH ỦY Q.NGÃI",
+    "rank_name": "ĐỒNG CHÍ ĐỖ HỮU HUY",
+    "position": "UVDK BCHTW ĐẢNG, PHÓ BÍ THƯ TỈNH ỦY CHỦ TỊCH UBND T. ĐL",
     "seat": "C12"
   },
   {
@@ -260,8 +260,8 @@ window.GUESTS = [
     "seat": "C13"
   },
   {
-    "rank_name": "ĐỒNG CHÍ THÁI ĐẠI NGỌC",
-    "position": "UỶ VIÊN BCHTW ĐẢNG, BÍ THƯ TỈNH ỦY GIA LAI",
+    "rank_name": "ĐỒNG CHÍ NGUYỄN VIỆT HÙNG",
+    "position": "PHÓ BÍ THƯ TỈNH ỦY CHỦ TỊCH UBND T. KH",
     "seat": "C14"
   },
   {
@@ -270,8 +270,8 @@ window.GUESTS = [
     "seat": "C15"
   },
   {
-    "rank_name": "ĐỒNG CHÍ LƯƠNG NGUYỄN MINH TRIẾT",
-    "position": "UỶ VIÊN BCHTW ĐẢNG, BÍ THƯ TỈNH ỦY ĐĂK LĂK",
+    "rank_name": "THIẾU TƯỚNG NGUYỄN QUỐC HƯƠNG",
+    "position": "PHÓ TƯ LỆNH QUÂN KHU",
     "seat": "C16"
   },
   {
@@ -280,58 +280,58 @@ window.GUESTS = [
     "seat": "C17"
   },
   {
-    "rank_name": "ĐỒNG CHÍ TRẦN PHONG",
-    "position": "UỶ VIÊN BCHTW ĐẢNG, BÍ THƯ TỈNH ỦY KHÁNH HÒA",
+    "rank_name": "THIẾU TƯỚNG HỨA VĂN TƯỞNG",
+    "position": "PHÓ TƯ LỆNH QUÂN KHU",
     "seat": "C18"
+  },
+  {
+    "rank_name": "THIẾU TƯỚNG TRẦN THANH HẢI",
+    "position": "PHÓ TƯ LỆNH QUÂN KHU",
+    "seat": "C19"
   },
   {
     "rank_name": "THIẾU TƯỚNG PHAN ĐẠI NGHĨA",
     "position": "PHÓ TƯ LỆNH KIÊM TMT QUÂN KHU",
-    "seat": "C19"
-  },
-  {
-    "rank_name": "ĐẠI BIỂU TRUNG ƯƠNG HỘI CỰU CHIẾN BINH VIỆT NAM",
-    "position": "",
     "seat": "C20"
   },
   {
-    "rank_name": "ĐẠI BIỂU ỦY BAN KIỂM TRA QUÂN ỦY TW",
+    "rank_name": "ĐẠI BIỂU, THỦ TRƯỞNG TỔNG CỤC II",
     "position": "",
     "seat": "D1"
   },
   {
-    "rank_name": "ĐỒNG CHÍ NGUYỄN MẠNH HÙNG",
-    "position": "PHÓ BÍ THƯ THÀNH ỦY CHỦ TỊCH UBND TP. ĐN",
+    "rank_name": "TRUNG TƯỚNG VŨ HỒNG SƠN",
+    "position": "TƯ LỆNH QUÂN CHỦNG PK - KQ",
     "seat": "D2"
   },
   {
-    "rank_name": "ĐẠI BIỂU VĂN PHÒNG QUÂN ỦY TW-BQP",
+    "rank_name": "ĐẠI BIỂU, THỦ TRƯỞNG TỔNG CỤC CÔNG NGHIỆP QP",
     "position": "",
     "seat": "D3"
   },
   {
-    "rank_name": "ĐỒNG CHÍ NGUYỄN HOÀNG GIANG",
-    "position": "UỶ VIÊN BCHTW ĐẢNG, PHÓ BÍ THƯ TỈNH ỦY CHỦ TỊCH UBND T. QN",
+    "rank_name": "TRUNG TƯỚNG LÊ XUÂN THẾ",
+    "position": "TƯ LỆNH QUÂN KHU 7",
     "seat": "D4"
   },
   {
-    "rank_name": "ĐẠI BIỂU VĂN PHÒNG BỘ QUỐC PHÒNG",
-    "position": "",
+    "rank_name": "THIẾU TƯỚNG VÕ DUY CHÍN",
+    "position": "NGUYÊN PHÓ CN CHÍNH TRỊ QUÂN KHU",
     "seat": "D5"
   },
   {
-    "rank_name": "ĐỒNG CHÍ PHẠM ANH TUẤN",
-    "position": "UỶ VIÊN BCHTW ĐẢNG, PHÓ BÍ THƯ TỈNH ỦY CHỦ TỊCH UBND T. G.LAI",
+    "rank_name": "TRUNG TƯỚNG ĐÀO TUẤN ANH",
+    "position": "TƯ LỆNH BTL QUÂN ĐOÀN 34",
     "seat": "D6"
   },
   {
-    "rank_name": "TRUNG TƯỚNG NGUYỄN VĂN TUYÊN",
-    "position": "NGUYÊN PHÓ GIÁM ĐỐC HỌC VIỆN LỤC QUÂN",
+    "rank_name": "TRUNG TƯỚNG LÊ ANH THƠ",
+    "position": "NGUYÊN CHÍNH ỦY HỌC VIỆN LỤC QUÂN",
     "seat": "D7"
   },
   {
-    "rank_name": "ĐỒNG CHÍ ĐỖ HỮU HUY",
-    "position": "UVDK BCHTW ĐẢNG, PHÓ BÍ THƯ TỈNH ỦY CHỦ TỊCH UBND T. ĐL",
+    "rank_name": "THIẾU TƯỚNG ĐOÀN XUÂN BƯỜNG",
+    "position": "CHÍNH ỦY QUÂN KHU 4",
     "seat": "D8"
   },
   {
@@ -340,8 +340,8 @@ window.GUESTS = [
     "seat": "D9"
   },
   {
-    "rank_name": "ĐỒNG CHÍ NGUYỄN VIỆT HÙNG",
-    "position": "PHÓ BÍ THƯ TỈNH ỦY CHỦ TỊCH UBND T. KH",
+    "rank_name": "THIẾU TƯỚNG TRẦN VĂN BẮC",
+    "position": "TƯ LỆNH QUÂN KHU 2",
     "seat": "D10"
   },
   {
@@ -350,7 +350,7 @@ window.GUESTS = [
     "seat": "D11"
   },
   {
-    "rank_name": "ĐẠI BIỂU BTL QUÂN KHU 1",
+    "rank_name": "ĐẠI BIỂU BTL QUÂN KHU 9",
     "position": "",
     "seat": "D12"
   },
@@ -360,8 +360,8 @@ window.GUESTS = [
     "seat": "D13"
   },
   {
-    "rank_name": "ĐẠI BIỂU BTL QUÂN KHU 2",
-    "position": "",
+    "rank_name": "TRUNG TƯỚNG NGUYỄN BÁ HÙNG",
+    "position": "CHÍNH ỦY HỌC VIỆN CHÍNH TRỊ",
     "seat": "D14"
   },
   {
@@ -370,8 +370,8 @@ window.GUESTS = [
     "seat": "D15"
   },
   {
-    "rank_name": "ĐẠI BIỂU BTL QUÂN KHU 3",
-    "position": "",
+    "rank_name": "TRUNG TƯỚNG NGUYỄN HỒNG LÂM",
+    "position": "CỤC TRƯỞNG CỤC TÀI CHÍNH",
     "seat": "D16"
   },
   {
@@ -380,33 +380,33 @@ window.GUESTS = [
     "seat": "D17"
   },
   {
-    "rank_name": "ĐẠI BIỂU BTL QUÂN KHU 4",
-    "position": "",
+    "rank_name": "THIẾU TƯỚNG TRẦN ĐẠI THẮNG",
+    "position": "CHÍNH ỦY BTL QUÂN ĐOÀN 12",
     "seat": "D18"
   },
   {
-    "rank_name": "TRUNG TƯỚNG NGUYỄN NGỌC CẢ",
-    "position": "NGUYÊN HIỆU TRƯỞNG TRƯỜNG SQLQ2",
+    "rank_name": "TRUNG TƯỚNG TRẦN PHƯỚC TỚI",
+    "position": "NGUYÊN PHÓ VIỆN TRƯỞNG VKSNDTC",
     "seat": "D19"
   },
   {
-    "rank_name": "ĐẠI BIỂU BTL QUÂN KHU 7",
-    "position": "",
+    "rank_name": "THIẾU TƯỚNG TRẦN XUÂN MẠNH",
+    "position": "PHÓ TƯ LỆNH - TMT QUÂN KHU 1",
     "seat": "D20"
   },
   {
-    "rank_name": "ĐẠI BIỂU, THỦ TRƯỞNG TỔNG CỤC HẬU CẦN-KỸ THUẬT",
-    "position": "",
+    "rank_name": "THIẾU TƯỚNG VÕ VĂN HƯNG",
+    "position": "CHỦ NHIỆM CHÍNH TRỊ QUÂN KHU",
     "seat": "E1"
   },
   {
-    "rank_name": "ĐẠI BIỂU VỤ ĐỊA PHƯƠNG II BAN TỔ CHỨC TW",
-    "position": "",
+    "rank_name": "ĐỒNG CHÍ CAO HOÀNG SƠN",
+    "position": "VỤ TRƯỞNG VỤ ĐỊA PHƯƠNG II BAN TỔ CHỨC TW",
     "seat": "E2"
   },
   {
-    "rank_name": "ĐẠI BIỂU, THỦ TRƯỞNG TỔNG CỤC II",
-    "position": "",
+    "rank_name": "THIẾU TƯỚNG LƯU XUÂN PHƯƠNG",
+    "position": "PHÓ TMT QUÂN KHU",
     "seat": "E3"
   },
   {
@@ -415,23 +415,23 @@ window.GUESTS = [
     "seat": "E4"
   },
   {
-    "rank_name": "ĐẠI BIỂU, THỦ TRƯỞNG TỔNG CỤC CÔNG NGHIỆP QP",
-    "position": "",
+    "rank_name": "THIẾU TƯỚNG TỐNG PHÚ",
+    "position": "PHÓ GIÁM ĐỐC HỌC VIỆN LỤC QUÂN",
     "seat": "E5"
   },
   {
-    "rank_name": "ĐẠI BIỂU VỤ ĐỊA PHƯƠNG II BAN NỘI CHÍNH TW",
-    "position": "",
+    "rank_name": "ĐỒNG CHÍ ĐOÀN HỒNG NGỌC",
+    "position": "VỤ TRƯỞNG VỤ ĐỊA PHƯƠNG II BAN NỘI CHÍNH TW",
     "seat": "E6"
   },
   {
-    "rank_name": "TRUNG TƯỚNG LÊ ANH THƠ",
-    "position": "NGUYÊN CHÍNH ỦY HỌC VIỆN LỤC QUÂN",
+    "rank_name": "ĐẠI BIỂU TRUNG ƯƠNG HỘI",
+    "position": "CỰU CHIẾN BINH VIỆT NAM",
     "seat": "E7"
   },
   {
-    "rank_name": "ĐẠI BIỂU VỤ ĐỊA PHƯƠNG II BAN TUYÊN GIÁO VÀ DÂN VẬN",
-    "position": "",
+    "rank_name": "ĐỒNG CHÍ NGUYỄN THẾ HÒA",
+    "position": "VỤ TRƯỞNG VỤ ĐỊA PHƯƠNG II BAN TG & DV",
     "seat": "E8"
   },
   {
@@ -440,8 +440,8 @@ window.GUESTS = [
     "seat": "E9"
   },
   {
-    "rank_name": "ĐẠI BIỂU VỤ ĐỊA BÀN V ỦY BAN KIỂM TRA TRUNG ƯƠNG",
-    "position": "",
+    "rank_name": "THIẾU TƯỚNG TRẦN NGỌC HỮU",
+    "position": "PHÓ TƯ LỆNH BỘ ĐỘI BIÊN PHÒNG",
     "seat": "E10"
   },
   {
@@ -450,8 +450,8 @@ window.GUESTS = [
     "seat": "E11"
   },
   {
-    "rank_name": "ĐẠI BIỂU BTL QUÂN KHU 9",
-    "position": "",
+    "rank_name": "THIẾU TƯỚNG LÊ ĐÌNH CƯỜNG",
+    "position": "TƯ LỆNH CẢNH SÁT BIỂN",
     "seat": "E12"
   },
   {
@@ -460,8 +460,8 @@ window.GUESTS = [
     "seat": "E13"
   },
   {
-    "rank_name": "ĐẠI BIỂU BTL QUÂN ĐOÀN 12",
-    "position": "",
+    "rank_name": "THIẾU TƯỚNG HÀ TẤT ĐẠT",
+    "position": "PHÓ TƯ LỆNH QUÂN KHU 3",
     "seat": "E14"
   },
   {
@@ -470,8 +470,8 @@ window.GUESTS = [
     "seat": "E15"
   },
   {
-    "rank_name": "ĐẠI BIỂU BTL QUÂN ĐOÀN 34",
-    "position": "",
+    "rank_name": "THIẾU TƯỚNG NGUYỄN QUỐC DUẨN",
+    "position": "CHÍNH ỦY BINH CHỦNG ĐẶC CÔNG",
     "seat": "E16"
   },
   {
@@ -480,58 +480,58 @@ window.GUESTS = [
     "seat": "E17"
   },
   {
-    "rank_name": "ĐẠI BIỂU QUÂN CHỦNG HẢI QUÂN",
-    "position": "",
+    "rank_name": "THIẾU TƯỚNG VŨ VIẾT HOÀNG",
+    "position": "TƯ LỆNH BINH CHỦNG TTLL",
     "seat": "E18"
   },
   {
-    "rank_name": "THIẾU TƯỚNG TỐNG PHÚ",
-    "position": "PHÓ GIÁM ĐỐC HỌC VIỆN LỤC QUÂN",
+    "rank_name": "TRUNG TƯỚNG NGUYỄN NGỌC CẢ",
+    "position": "NGUYÊN HIỆU TRƯỞNG TRƯỜNG SQLQ2",
     "seat": "E19"
   },
   {
-    "rank_name": "ĐẠI BIỂU QUÂN CHỦNG PK - KQ",
-    "position": "",
+    "rank_name": "THIẾU TƯỚNG NGUYỄN MINH THẮNG",
+    "position": "CHÍNH ỦY BỘ TƯ LỆNH 386",
     "seat": "E20"
-  },
-  {
-    "rank_name": "THIẾU TƯỚNG VÕ VĂN HƯNG",
-    "position": "CHỦ NHIỆM CHÍNH TRỊ QUÂN KHU",
-    "seat": "F1"
-  },
-  {
-    "rank_name": "THIẾU TƯỚNG NGUYỄN VĂN THANH",
-    "position": "PHÓ TƯ LỆNH CẢNH VỆ /BỘ CÔNG AN",
-    "seat": "F2"
-  },
-  {
-    "rank_name": "THIẾU TƯỚNG LƯU XUÂN PHƯƠNG",
-    "position": "PHÓ TMT QUÂN KHU",
-    "seat": "F3"
-  },
-  {
-    "rank_name": "ĐỒNG CHÍ LÊ NGỌC QUANG",
-    "position": "PHÓ VỤ TRƯỞNG VỤ ĐỊA PHƯƠNG II VĂN PHÒNG TWĐ",
-    "seat": "F4"
   },
   {
     "rank_name": "THIẾU TƯỚNG ĐOÀN VĂN NHẤT",
     "position": "PHÓ CN CHÍNH TRỊ QUÂN KHU",
-    "seat": "F5"
+    "seat": "F1"
   },
   {
-    "rank_name": "ĐẠI BIỂU HỌC VIỆN QUỐC PHÒNG",
-    "position": "",
-    "seat": "F6"
+    "rank_name": "ĐỒNG CHÍ BÙI QUỐC KHÁNH",
+    "position": "SỸ QUAN BIỆT PHÁI VỤ THAM MƯU TH VĂN PHÒNG TWĐ",
+    "seat": "F2"
   },
   {
     "rank_name": "ĐẠI TÁ TRƯƠNG QUANG SINH",
     "position": "PHÓ CHỦ NHIỆM UBKT ĐẢNG ỦY QUÂN KHU",
+    "seat": "F3"
+  },
+  {
+    "rank_name": "ĐỒNG CHÍ VŨ NHẬT CHUNG",
+    "position": "PHÓ VỤ TRƯỞNG VỤ THAM MƯU TH VĂN PHÒNG TWĐ",
+    "seat": "F4"
+  },
+  {
+    "rank_name": "THIẾU TƯỚNG HÀ HUY LONG",
+    "position": "NGUYÊN PHÓ CHỦ NHIỆM CHÍNH TRỊ QUÂN KHU",
+    "seat": "F5"
+  },
+  {
+    "rank_name": "ĐẠI BIỂU KIỂM TOÁN NHÀ NƯỚC CHUYÊN NGÀNH Ia",
+    "position": "",
+    "seat": "F6"
+  },
+  {
+    "rank_name": "ĐẠI TÁ PHẠM ĐỚI",
+    "position": "NGUYÊN PHÓ TMT QUÂN KHU",
     "seat": "F7"
   },
   {
-    "rank_name": "ĐẠI BIỂU HỌC VIỆN LỤC QUÂN",
-    "position": "",
+    "rank_name": "ĐỒNG CHÍ NGUYỄN THỊ MỸ YÊN",
+    "position": "PHÓ VỤ TRƯỞNG VỤ ĐỊA BÀN V UBKT TRUNG ƯƠNG",
     "seat": "F8"
   },
   {
@@ -540,8 +540,8 @@ window.GUESTS = [
     "seat": "F9"
   },
   {
-    "rank_name": "ĐẠI BIỂU HỌC VIỆN CHÍNH TRỊ",
-    "position": "",
+    "rank_name": "THIẾU TƯỚNG HOÀNG VĂN SỸ",
+    "position": "TƯ LỆNH BINH ĐOÀN 15",
     "seat": "F10"
   },
   {
@@ -550,8 +550,8 @@ window.GUESTS = [
     "seat": "F11"
   },
   {
-    "rank_name": "ĐẠI BIỂU BTL BỘ ĐỘI BIÊN PHÒNG",
-    "position": "",
+    "rank_name": "THIẾU TƯỚNG TRẦN QUANG TUẤN",
+    "position": "TƯ LỆNH CẢNH SÁT BIỂN VÙNG 2",
     "seat": "F12"
   },
   {
@@ -560,18 +560,18 @@ window.GUESTS = [
     "seat": "F13"
   },
   {
-    "rank_name": "ĐẠI BIỂU BỘ TƯ LỆNH CẢNH SÁT BIỂN",
-    "position": "",
+    "rank_name": "THIẾU TƯỚNG DƯƠNG MINH HẢI",
+    "position": "CỤC TRƯỞNG CỤC KHOA HỌC QUÂN SỰ",
     "seat": "F14"
   },
   {
-    "rank_name": "THIẾU TƯỚNG VÕ DUY CHÍN",
-    "position": "NGUYÊN PHÓ CHỦ NHIỆM CHÍNH TRỊ QUÂN KHU",
+    "rank_name": "ĐẠI TÁ KHÚC NGỌC PHƯƠNG",
+    "position": "NGUYÊN PHÓ TMT QUÂN KHU",
     "seat": "F15"
   },
   {
-    "rank_name": "ĐẠI BIỂU BTL QUÂN KHU THỦ ĐÔ HÀ NỘI",
-    "position": "",
+    "rank_name": "THIẾU TƯỚNG LƯU NAM TIẾN",
+    "position": "CHÍNH ỦY BTL THỦ ĐÔ HÀ NỘI",
     "seat": "F16"
   },
   {
@@ -580,28 +580,28 @@ window.GUESTS = [
     "seat": "F17"
   },
   {
-    "rank_name": "ĐẠI BIỂU BTL BINH CHỦNG PHÁO BINH TÊN LỬA",
-    "position": "",
+    "rank_name": "THIẾU TƯỚNG BÙI TRỌNG HIẾU",
+    "position": "PHÓ CỤC TRƯỞNG CỤC ĐỐI NGOẠI",
     "seat": "F18"
   },
   {
-    "rank_name": "THIẾU TƯỚNG HÀ HUY LONG",
-    "position": "NGUYÊN PHÓ CHỦ NHIỆM CHÍNH TRỊ QUÂN KHU",
+    "rank_name": "THIẾU TƯỚNG ĐẶNG LÊ NHỊ",
+    "position": "NGUYÊN PHÓ TMT QUÂN KHU",
     "seat": "F19"
   },
   {
-    "rank_name": "ĐẠI BIỂU BTL BINH CHỦNG TĂNG THIẾT GIÁP",
+    "rank_name": "ĐẠI BIỂU BTL TÁC CHIẾN KHÔNG GIAN MẠNG",
     "position": "",
     "seat": "F20"
   },
   {
-    "rank_name": "ĐẠI TÁ VÕ VĂN BÁ",
-    "position": "PHÓ TMT QUÂN KHU",
+    "rank_name": "ĐẠI TÁ LƯƠNG KẾ ĐIỀM",
+    "position": "CHỦ NHIỆM HC - KT QUÂN KHU",
     "seat": "G1"
   },
   {
-    "rank_name": "ĐẠI BIỂU PHÒNG CẢNH VỆ MIỀN TRUNG /BTL CẢNH VỆ",
-    "position": "",
+    "rank_name": "THIẾU TƯỚNG NGUYỄN VĂN THANH",
+    "position": "PHÓ TƯ LỆNH CẢNH VỆ BỘ CÔNG AN",
     "seat": "G2"
   },
   {
@@ -610,78 +610,78 @@ window.GUESTS = [
     "seat": "G3"
   },
   {
-    "rank_name": "ĐỒNG CHÍ VŨ NHẬT CHUNG",
-    "position": "PHÓ VỤ TRƯỞNG VỤ THAM MƯU TH VĂN PHÒNG TWĐ",
+    "rank_name": "ĐỒNG CHÍ NGUYỄN VĂN BÌNH",
+    "position": "CHỦ TỊCH TẬP ĐOÀN SUN GROUP",
     "seat": "G4"
-  },
-  {
-    "rank_name": "ĐẠI TÁ LƯƠNG KẾ ĐIỀM",
-    "position": "CHỦ NHIỆM HC - KT QUÂN KHU",
-    "seat": "G5"
-  },
-  {
-    "rank_name": "ĐẠI BIỂU CỤC KHOA HỌC QUÂN SỰ BỘ QUỐC PHÒNG",
-    "position": "",
-    "seat": "G6"
   },
   {
     "rank_name": "ĐẠI TÁ NGUYỄN THANH XUÂN",
     "position": "PHÓ CN CHÍNH TRỊ QUÂN KHU",
+    "seat": "G5"
+  },
+  {
+    "rank_name": "ĐỒNG CHÍ TRẦN MINH SƠN",
+    "position": "PHÓ CHỦ TỊCH HĐQT TẬP ĐOÀN SUN GROUP",
+    "seat": "G6"
+  },
+  {
+    "rank_name": "ĐẠI TÁ TẠ KÍNH",
+    "position": "NGUYÊN PHÓ CN CHÍNH TRỊ QUÂN KHU",
     "seat": "G7"
   },
   {
-    "rank_name": "ĐẠI BIỂU CỤC ĐỐI NGOẠI",
-    "position": "",
+    "rank_name": "THIẾU TƯỚNG VŨ HẢI ĐĂNG",
+    "position": "PHÓ CHÁNH THANH TRA BỘ QUỐC PHÒNG",
     "seat": "G8"
   },
   {
-    "rank_name": "ĐẠI TÁ PHẠM ĐỚI",
-    "position": "NGUYÊN PHÓ TMT QUÂN KHU",
+    "rank_name": "ĐẠI TÁ DƯƠNG HỮU QUYÊN",
+    "position": "NGUYÊN PHÓ CHỦ NHIỆM UBKT ĐẢNG ỦY QUÂN KHU",
     "seat": "G9"
   },
   {
-    "rank_name": "ĐẠI BIỂU BTL BINH CHỦNG ĐẶC CÔNG",
-    "position": "",
+    "rank_name": "THIẾU TƯỚNG ĐÀM THUẬN CÔNG",
+    "position": "PHÓ VIỆN TRƯỞNG KIỂM SÁT QUÂN SỰ TW",
     "seat": "G10"
   },
   {
-    "rank_name": "ĐẠI TÁ TRẦN VĂN HẠNH",
+    "rank_name": "ĐẠI TÁ LÊ XUÂN THỊNH",
     "position": "NGUYÊN PHÓ TMT QUÂN KHU",
     "seat": "G11"
   },
   {
-    "rank_name": "ĐẠI BIỂU BTL BINH CHỦNG CÔNG BINH",
-    "position": "",
+    "rank_name": "THIẾU TƯỚNG HOÀNG HỮU QUÝ",
+    "position": "PHÓ CHÁNH ÁN TÒA ÁN QUÂN SỰ TRUNG ƯƠNG",
     "seat": "G12"
-  },
-  {
-    "rank_name": "ĐẠI TÁ KHÚC NGỌC PHƯƠNG",
-    "position": "NGUYÊN PHÓ TMT QUÂN KHU",
-    "seat": "G13"
-  },
-  {
-    "rank_name": "ĐẠI BIỂU BTL BINH CHỦNG THÔNG TIN LIÊN LẠC",
-    "position": "",
-    "seat": "G14"
   },
   {
     "rank_name": "ĐẠI TÁ TRƯƠNG QUANG NHẠN",
     "position": "NGUYÊN PHÓ TMT QUÂN KHU",
+    "seat": "G13"
+  },
+  {
+    "rank_name": "THIẾU TƯỚNG TRẦN TRUNG THIẾT",
+    "position": "PHÓ CỤC TRƯỞNG CỤC TỔ CHỨC/TCCT",
+    "seat": "G14"
+  },
+  {
+    "rank_name": "ĐẠI TÁ TRẦN VĂN LÝ",
+    "position": "NGUYÊN PHÓ TMT QUÂN KHU",
     "seat": "G15"
   },
   {
-    "rank_name": "ĐẠI BIỂU BTL BINH CHỦNG HÓA HỌC",
-    "position": "",
+    "rank_name": "CHUẨN ĐÔ ĐỐC NGUYỄN ĐĂNG TIẾN",
+    "position": "CHÍNH ỦY VÙNG 3 HẢI QUÂN",
     "seat": "G16"
   },
   {
-    "rank_name": "ĐẠI TÁ ĐỖ TRỌNG BÌNH",
-    "position": "NGUYÊN PHÓ TMT QUÂN KHU",
+    "rank_name": "ĐẠI TÁ ĐOÀN HỒNG CHƯƠNG",
+    "position": "NGUYÊN PHÓ CHỦ NHIỆM CHÍNH TRỊ QUÂN KHU",
     "seat": "G17"
   },
   {
-    "rank_name": "ĐẠI BIỂU BTL TÁC CHIẾN KHÔNG GIAN MẠNG",
-    "position": "",
+    "rank_name": "CHUẨN ĐÔ ĐỐC NGUYỄN ANH TUẤN",
+    "position": "TƯ LỆNH VÙNG 4 HẢI QUÂN",
     "seat": "G18"
   },
   {
@@ -690,18 +690,18 @@ window.GUESTS = [
     "seat": "G19"
   },
   {
-    "rank_name": "ĐẠI BIỂU CỤC THI HÀNH ÁN BỘ QUỐC PHÒNG",
-    "position": "",
+    "rank_name": "THIẾU TƯỚNG LÊ QUANG TRÍ",
+    "position": "PHÓ GIÁM ĐỐC BỆNH VIỆN QUÂN Y 175",
     "seat": "G20"
   },
   {
-    "rank_name": "ĐẠI TÁ LÊ KIM GIÀU",
+    "rank_name": "ĐẠI TÁ VÕ VĂN BÁ",
     "position": "PHÓ TMT QUÂN KHU",
     "seat": "H1"
   },
   {
-    "rank_name": "ĐỒNG CHÍ BÙI QUỐC KHÁNH",
-    "position": "SỸ QUAN BIỆT PHÁI VỤ THAM MƯU TH VĂN PHÒNG TWĐ",
+    "rank_name": "ĐẠI TÁ SÁI MINH HẢI",
+    "position": "TRƯỞNG PHÒNG CẢNH VỆ MIỀN TRUNG BTL CẢNH VỆ",
     "seat": "H2"
   },
   {
@@ -720,8 +720,8 @@ window.GUESTS = [
     "seat": "H5"
   },
   {
-    "rank_name": "ĐẠI BIỂU CỤC TUYÊN HUẤN TCCT",
-    "position": "",
+    "rank_name": "THIẾU TƯỚNG NGUYỄN XUÂN THỦY",
+    "position": "PHÓ CỤC TRƯỞNG CỤC TUYÊN HUẤN/TCCT",
     "seat": "H6"
   },
   {
@@ -730,78 +730,78 @@ window.GUESTS = [
     "seat": "H7"
   },
   {
-    "rank_name": "THIẾU TƯỚNG TRẦN TRUNG THIẾT",
-    "position": "PHÓ CỤC TRƯỞNG CỤC TỔ CHỨC/TCCT",
+    "rank_name": "ĐẠI TÁ ĐÀO XUÂN VŨ",
+    "position": "PHÓ TỔNG GIÁM ĐỐC TẬP ĐOÀN VIETTEL",
     "seat": "H8"
   },
   {
-    "rank_name": "ĐẠI TÁ LÊ XUÂN THỊNH",
-    "position": "NGUYÊN PHÓ TMT QUÂN KHU",
+    "rank_name": "ĐẠI TÁ PHẠM ĐỨC DŨNG",
+    "position": "NGUYÊN PHÓ CN HẬU CẦN QUÂN KHU",
     "seat": "H9"
   },
   {
-    "rank_name": "ĐẠI BIỂU, LÃNH ĐẠO TẬP ĐOÀN VIETTEL",
-    "position": "",
+    "rank_name": "ĐẠI TÁ LÊ MẠNH TRƯỜNG",
+    "position": "CỤC ĐT - HS BỘ QUỐC PHÒNG",
     "seat": "H10"
   },
   {
-    "rank_name": "ĐẠI TÁ ĐOÀN VĂN TÂM",
-    "position": "NGUYÊN PHÓ TMT QUÂN KHU",
+    "rank_name": "ĐẠI TÁ TRỊNH VĂN TÂM",
+    "position": "NGUYÊN PHÓ CN CHÍNH TRỊ QUÂN KHU",
     "seat": "H11"
   },
   {
-    "rank_name": "ĐẠI BIỂU, LÃNH ĐẠO NGÂN HÀNG MB",
-    "position": "",
+    "rank_name": "ĐẠI TÁ VŨ VĂN KIỆM",
+    "position": "PHÓ CỤC TRƯỞNG CỤC PHÁP CHẾ",
     "seat": "H12"
   },
   {
-    "rank_name": "ĐẠI TÁ TRẦN VĂN LÝ",
-    "position": "NGUYÊN PHÓ TMT QUÂN KHU",
+    "rank_name": "ĐẠI TÁ PHAN VĂN HẠNG",
+    "position": "NGUYÊN PHÓ CHỦ NHIỆM CHÍNH TRỊ QUÂN KHU",
     "seat": "H13"
   },
   {
-    "rank_name": "ĐẠI BIỂU CỤC TÀI CHÍNH BỘ QUỐC PHÒNG",
-    "position": "",
+    "rank_name": "ĐẠI TÁ NGUYỄN KHÁNH LINH",
+    "position": "CỤC TRƯỞNG/CỤC 11 TỔNG CỤC II",
     "seat": "H14"
   },
   {
-    "rank_name": "ĐẠI TÁ TẠ KÍNH",
-    "position": "NGUYÊN PHÓ CHỦ NHIỆM CHÍNH TRỊ QUÂN KHU",
+    "rank_name": "ĐẠI TÁ LÊ VĂN HẢI",
+    "position": "NGUYÊN PHÓ CHỦ NHIỆM UBKT ĐẢNG ỦY QK",
     "seat": "H15"
   },
   {
-    "rank_name": "ĐẠI BIỂU CỤC ĐT - HS BỘ QUỐC PHÒNG",
-    "position": "",
+    "rank_name": "ĐẠI TÁ TRẦN ĐÌNH MẠNH",
+    "position": "PHÓ TƯ LỆNH-TMT PHÁO BINH TÊN LỬA",
     "seat": "H16"
   },
   {
-    "rank_name": "ĐẠI TÁ DƯƠNG HỮU QUYÊN",
-    "position": "NGUYÊN PHÓ CHỦ NHIỆM UBKT ĐẢNG ỦY QUÂN KHU",
+    "rank_name": "ĐẠI TÁ LÊ PHÚC THẮNG",
+    "position": "NGUYÊN CHỦ NHIỆM KỸ THUẬT QUÂN KHU",
     "seat": "H17"
   },
   {
-    "rank_name": "ĐẠI BIỂU THANH TRA BỘ QUỐC PHÒNG",
-    "position": "",
+    "rank_name": "ĐẠI TÁ KHỔNG MẠNH HƯNG",
+    "position": "PHÓ CHÍNH ỦY BINH CHỦNG CÔNG BINH",
     "seat": "H18"
   },
   {
-    "rank_name": "ĐẠI TÁ ĐOÀN HỒNG CHƯƠNG",
+    "rank_name": "ĐẠI TÁ NGUYỄN HỮU CHỈNH",
     "position": "NGUYÊN PHÓ CHỦ NHIỆM CHÍNH TRỊ QUÂN KHU",
     "seat": "H19"
   },
   {
-    "rank_name": "ĐẠI BIỂU CỤC PHÁP CHẾ",
-    "position": "",
+    "rank_name": "ĐẠI TÁ NGUYỄN THIỆN THANH",
+    "position": "PHÓ CHÍNH ỦY BINH CHỦNG TĂNG-THIẾT GIÁP",
     "seat": "H20"
   },
   {
-    "rank_name": "ĐẠI TÁ ĐỖ XUÂN HÙNG",
+    "rank_name": "ĐẠI TÁ LÊ KIM GIÀU",
     "position": "PHÓ TMT QUÂN KHU",
     "seat": "I1"
   },
   {
-    "rank_name": "ĐẠI BIỂU VIỆN KIỂM SÁT QUÂN SỰ TRUNG ƯƠNG",
-    "position": "",
+    "rank_name": "ĐẠI TÁ HOÀNG TRUNG KIÊN",
+    "position": "CHÍNH ỦY SƯ ĐOÀN KQ372 QC PK-KQ",
     "seat": "I2"
   },
   {
@@ -810,7 +810,7 @@ window.GUESTS = [
     "seat": "I3"
   },
   {
-    "rank_name": "ĐẠI BIỂU TÒA ÁN QUÂN SỰ TRUNG ƯƠNG",
+    "rank_name": "ĐẠI BIỂU SƯ ĐOÀN PK375 QC PK-KQ",
     "position": "",
     "seat": "I4"
   },
@@ -820,8 +820,8 @@ window.GUESTS = [
     "seat": "I5"
   },
   {
-    "rank_name": "ĐẠI BIỂU BTL VÙNG 3 HẢI QUÂN",
-    "position": "",
+    "rank_name": "THƯỢNG TÁ PHẠM NHƯ ÁNH",
+    "position": "PHÓ TỔNG GIÁM ĐỐC NGÂN HÀNG MB",
     "seat": "I6"
   },
   {
@@ -830,87 +830,87 @@ window.GUESTS = [
     "seat": "I7"
   },
   {
-    "rank_name": "ĐẠI BIỂU BTL VÙNG 4 HẢI QUÂN",
+    "rank_name": "ĐẠI BIỂU CÔNG TY THÀNH AN 96",
     "position": "",
     "seat": "I8"
   },
   {
-    "rank_name": "ĐẠI TÁ TRẦN MINH CHÍN",
-    "position": "NGUYÊN PHÓ CHỦ NHIỆM CHÍNH TRỊ QUÂN KHU",
+    "rank_name": "ĐẠI TÁ NGUYỄN VĂN KHÁNH",
+    "position": "NGUYÊN CHÍNH ỦY CỤC KỸ THUẬT QK",
     "seat": "I9"
   },
   {
-    "rank_name": "ĐẠI BIỂU BTL CẢNH SÁT BIỂN VÙNG 2",
+    "rank_name": "ĐẠI BIỂU LÃNH ĐẠO THÔNG TẤN XÃ VIỆT NAM",
     "position": "",
     "seat": "I10"
   },
   {
-    "rank_name": "ĐẠI TÁ NGUYỄN VĂN CHƯỚC",
-    "position": "NGUYÊN PHÓ CHỦ NHIỆM CHÍNH TRỊ QUÂN KHU",
+    "rank_name": "ĐẠI TÁ NGUYỄN NGỌC BÂNG",
+    "position": "NGUYÊN CHỦ NHIỆM KỸ THUẬT QUÂN KHU",
     "seat": "I11"
   },
   {
-    "rank_name": "ĐẠI BIỂU CỤC 11 TỔNG CỤC II",
+    "rank_name": "ĐẠI BIỂU LÃNH ĐẠO ĐÀI TIẾNG NÓI VIỆT NAM VOV KHU VỰC MIỀN TRUNG",
     "position": "",
     "seat": "I12"
   },
   {
-    "rank_name": "ĐẠI TÁ LÊ VĂN HẢI",
-    "position": "NGUYÊN PHÓ CHỦ NHIỆM UBKT ĐẢNG ỦY QK",
+    "rank_name": "ĐẠI TÁ TRẦN XUÂN SƠN",
+    "position": "NGUYÊN CHÍNH ỦY CỤC KỸ THUẬT QK",
     "seat": "I13"
   },
   {
-    "rank_name": "ĐẠI BIỂU BINH ĐOÀN 15",
+    "rank_name": "ĐẠI BIỂU LÃNH ĐẠO ĐÀI TRUYỀN HÌNH VIỆT NAM VTV8",
     "position": "",
     "seat": "I14"
   },
   {
-    "rank_name": "ĐẠI TÁ TRƯƠNG VĂN GÒN",
-    "position": "NGUYÊN PHÓ CHỦ NHIỆM UBKT ĐẢNG ỦY QK",
+    "rank_name": "ĐẠI TÁ DƯƠNG CÔNG TRI",
+    "position": "NGUYÊN PHÓ CN HẬU CẦN QUÂN KHU",
     "seat": "I15"
   },
   {
-    "rank_name": "ĐẠI BIỂU TRUNG TÂM 386",
+    "rank_name": "ĐẠI BIỂU LÃNH ĐẠO CỔNG THÔNG TIN ĐIỆN TỬ ĐCS VIỆT NAM",
     "position": "",
     "seat": "I16"
   },
   {
-    "rank_name": "ĐẠI TÁ DƯƠNG XUÂN DẦN",
-    "position": "NGUYÊN PHÓ CHỦ NHIỆM UBKT ĐẢNG ỦY QUÂN KHU",
+    "rank_name": "ĐẠI TÁ VÕ HOÀI NAM",
+    "position": "NGUYÊN CHỦ NHIỆM HẬU CẦN QUÂN KHU",
     "seat": "I17"
   },
   {
-    "rank_name": "ĐẠI BIỂU SƯ ĐOÀN PK375 QC PK-KQ",
-    "position": "",
+    "rank_name": "ĐẠI TÁ PHẠM CÔNG HỮU",
+    "position": "PHÓ CHÍNH ỦY BINH CHỦNG HÓA HỌC",
     "seat": "I18"
   },
   {
-    "rank_name": "ĐẠI TÁ NGUYỄN HỮU CHỈNH",
-    "position": "NGUYÊN PHÓ CHỦ NHIỆM CHÍNH TRỊ QUÂN KHU",
+    "rank_name": "ĐẠI TÁ NGÔ TẤN NHẤT",
+    "position": "NGUYÊN CHÍNH ỦY CỤC HẬU CẦN QK",
     "seat": "I19"
   },
   {
-    "rank_name": "ĐẠI BIỂU SƯ ĐOÀN KQ372 QC PK-KQ",
-    "position": "",
+    "rank_name": "ĐẠI TÁ BÙI NGỌC HUYÊN",
+    "position": "PHÓ CỤC TRƯỞNG CỤC THI HÀNH ÁN BỘ QUỐC PHÒNG",
     "seat": "I20"
   },
   {
-    "rank_name": "ĐẠI TÁ TRẦN ANH TUẤN",
-    "position": "PHÓ CHỦ NHIỆM HC - KT QUÂN KHU",
+    "rank_name": "ĐẠI TÁ ĐỖ XUÂN HÙNG",
+    "position": "PHÓ TMT QUÂN KHU",
     "seat": "K1"
   },
   {
-    "rank_name": "ĐẠI BIỂU BỆNH VIỆN QUÂN Y 175",
+    "rank_name": "ĐẠI BIỂU LÃNH ĐẠO TRUNG TÂM PT - TH QUÂN ĐỘI",
     "position": "",
     "seat": "K2"
   },
   {
-    "rank_name": "ĐẠI TÁ TRẦN VĂN THIÊN",
+    "rank_name": "ĐẠI TÁ TRẦN ANH TUẤN",
     "position": "PHÓ CHỦ NHIỆM HC - KT QUÂN KHU",
     "seat": "K3"
   },
   {
-    "rank_name": "ĐẠI BIỂU CÔNG TY THÀNH AN 96",
+    "rank_name": "ĐẠI BIỂU LÃNH ĐẠO BÁO QUÂN ĐỘI NHÂN DÂN",
     "position": "",
     "seat": "K4"
   },
@@ -920,163 +920,48 @@ window.GUESTS = [
     "seat": "K5"
   },
   {
-    "rank_name": "ĐẠI BIỂU LÃNH ĐẠO THÔNG TẤN XÃ VIỆT NAM",
-    "position": "",
-    "seat": "K6"
-  },
-  {
     "rank_name": "ĐẠI TÁ LÊ THÀNH TÔN",
     "position": "PHÓ CHỦ NHIỆM HC - KT QUÂN KHU",
     "seat": "K7"
   },
   {
-    "rank_name": "ĐẠI BIỂU LÃNH ĐẠO ĐÀI TIẾNG NÓI VIỆT NAM VOV KHU VỰC MIỀN TRUNG",
-    "position": "",
-    "seat": "K8"
-  },
-  {
-    "rank_name": "ĐẠI TÁ PHẠM ĐỨC DŨNG",
-    "position": "NGUYÊN PHÓ CN HẬU CẦN QUÂN KHU",
-    "seat": "K9"
-  },
-  {
-    "rank_name": "ĐẠI BIỂU LÃNH ĐẠO TRUNG TÂM PT - TH QUÂN ĐỘI",
-    "position": "",
-    "seat": "K10"
-  },
-  {
-    "rank_name": "ĐẠI TÁ ĐÀO NGỌC THANH",
-    "position": "NGUYÊN PHÓ CNHC QUÂN KHU",
-    "seat": "K11"
-  },
-  {
-    "rank_name": "ĐẠI BIỂU LÃNH ĐẠO BÁO QUÂN ĐỘI NHÂN DÂN",
-    "position": "",
-    "seat": "K12"
-  },
-  {
-    "rank_name": "ĐẠI TÁ TÔN THẤT HẢI",
-    "position": "NGUYÊN CHỦ NHIỆM KỸ THUẬT QUÂN KHU",
-    "seat": "K13"
-  },
-  {
-    "rank_name": "ĐẠI BIỂU LÃNH ĐẠO ĐÀI TRUYỀN HÌNH VIỆT NAM VTV8",
-    "position": "",
-    "seat": "K14"
-  },
-  {
-    "rank_name": "ĐẠI TÁ TRẦN PHƯỚC NHA",
-    "position": "NGUYÊN PHÓ CN CHÍNH TRỊ QUÂN KHU",
-    "seat": "K15"
-  },
-  {
-    "rank_name": "ĐẠI BIỂU LÃNH ĐẠO CỔNG THÔNG TIN ĐIỆN TỬ ĐCS VIỆT NAM",
-    "position": "",
-    "seat": "K16"
-  },
-  {
-    "rank_name": "ĐẠI TÁ TRỊNH VĂN TÂM",
-    "position": "NGUYÊN PHÓ CN CHÍNH TRỊ QUÂN KHU",
-    "seat": "K17"
-  },
-  {
-    "rank_name": "ĐẠI TÁ PHAN VĂN HẠNG",
-    "position": "NGUYÊN PHÓ CHỦ NHIỆM CHÍNH TRỊ QUÂN KHU",
-    "seat": "K19"
-  },
-  {
-    "rank_name": "ĐẠI TÁ TẠ VIẾT XUÂN",
-    "position": "PHÓ CHỦ NHIỆM HC - KT QUÂN KHU",
-    "seat": "L1"
-  },
-  {
     "rank_name": "ĐẠI TÁ NGUYỄN LÊN",
     "position": "NGUYÊN CHỦ NHIỆM HẬU CẦN QUÂN KHU",
-    "seat": "L3"
-  },
-  {
-    "rank_name": "ĐẠI TÁ NGÔ TẤN NHẤT",
-    "position": "NGUYÊN CHÍNH ỦY CỤC HẬU CẦN QK",
-    "seat": "L5"
-  },
-  {
-    "rank_name": "ĐẠI TÁ VÕ HOÀI NAM",
-    "position": "NGUYÊN CHỦ NHIỆM HẬU CẦN QUÂN KHU",
-    "seat": "L7"
-  },
-  {
-    "rank_name": "ĐẠI TÁ NGUYỄN TRUNG KHANH",
-    "position": "NGUYÊN CHỦ NHIỆM HẬU CẦN QUÂN KHU",
-    "seat": "L9"
-  },
-  {
-    "rank_name": "ĐẠI TÁ DƯƠNG CÔNG TRI",
-    "position": "NGUYÊN PHÓ CN HẬU CẦN QUÂN KHU",
-    "seat": "L11"
-  },
-  {
-    "rank_name": "ĐẠI TÁ NGUYỄN THÀNH THIỆN",
-    "position": "NGUYÊN CHÍNH ỦY CỤC KỸ THUẬT QK",
-    "seat": "L13"
-  },
-  {
-    "rank_name": "ĐẠI TÁ NGUYỄN VĂN KHÁNH",
-    "position": "NGUYÊN CHÍNH ỦY CỤC KỸ THUẬT QK",
-    "seat": "L15"
-  },
-  {
-    "rank_name": "ĐẠI TÁ LÊ PHÚC THẮNG",
-    "position": "NGUYÊN CHỦ NHIỆM KỸ THUẬT QUÂN KHU",
-    "seat": "L17"
-  },
-  {
-    "rank_name": "ĐẠI TÁ NGUYỄN VĂN TIÊN",
-    "position": "NGUYÊN CHỦ NHIỆM KỸ THUẬT QUÂN KHU",
-    "seat": "L19"
+    "seat": "K9"
   },
   {
     "rank_name": "ĐẠI TÁ NGÔ TIẾN SỸ",
     "position": "NGUYÊN CHỦ NHIỆM HẬU CẦN QUÂN KHU",
-    "seat": "M3"
-  },
-  {
-    "rank_name": "ĐẠI TÁ TRẦN CÔNG MẠNH",
-    "position": "NGUYÊN PHÓ CN HẬU CẦN QUÂN KHU",
-    "seat": "M5"
-  },
-  {
-    "rank_name": "ĐẠI TÁ TRẦN THIỆN PHƯỚC",
-    "position": "NGUYÊN PHÓ CN HẬU CẦN QUÂN KHU",
-    "seat": "M7"
-  },
-  {
-    "rank_name": "ĐẠI TÁ TRẦN ĐÌNH ĐANG",
-    "position": "NGUYÊN CHÍNH ỦY CỤC KỸ THUẬT QK",
-    "seat": "M9"
-  },
-  {
-    "rank_name": "ĐẠI TÁ NGUYỄN VĂN MINH",
-    "position": "NGUYÊN PHÓ CN KỸ THUẬT QK",
-    "seat": "M11"
-  },
-  {
-    "rank_name": "ĐẠI TÁ NGUYỄN HOÀNH KHIẾU",
-    "position": "NGUYÊN PHÓ CN KỸ THUẬT QUÂN KHU",
-    "seat": "M13"
-  },
-  {
-    "rank_name": "ĐẠI TÁ NGUYỄN NGỌC BÂNG",
-    "position": "NGUYÊN CHỦ NHIỆM KỸ THUẬT QUÂN KHU",
-    "seat": "M15"
+    "seat": "K11"
   },
   {
     "rank_name": "ĐẠI TÁ ĐẶNG VĂN MAU",
     "position": "NGUYÊN PHÓ CN KỸ THUẬT QUÂN KHU",
-    "seat": "M17"
+    "seat": "K13"
   },
   {
-    "rank_name": "ĐẠI TÁ TRẦN XUÂN SƠN",
+    "rank_name": "ĐẠI TÁ LÊ QUANG TRÌNH",
+    "position": "NGUYÊN CHÍNH ỦY CỤC HẬU CẦN QK",
+    "seat": "K15"
+  },
+  {
+    "rank_name": "ĐẠI TÁ BÙI TÁ TUÂN",
+    "position": "NGUYÊN CHÍNH ỦY CỤC HẬU CẦN QK",
+    "seat": "K17"
+  },
+  {
+    "rank_name": "ĐẠI TÁ TRẦN ĐÌNH ĐANG",
     "position": "NGUYÊN CHÍNH ỦY CỤC KỸ THUẬT QK",
-    "seat": "M19"
+    "seat": "K19"
+  },
+  {
+    "rank_name": "ĐẠI TÁ TRẦN VĂN THIÊN",
+    "position": "PHÓ CHỦ NHIỆM HC - KT QUÂN KHU",
+    "seat": "L1"
+  },
+  {
+    "rank_name": "ĐẠI TÁ TRẦN THIỆN PHƯỚC",
+    "position": "NGUYÊN PHÓ CN HẬU CẦN QUÂN KHU",
+    "seat": "L3"
   }
 ];

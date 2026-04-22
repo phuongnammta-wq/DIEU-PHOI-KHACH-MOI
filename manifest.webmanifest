@@ -1,7 +1,7 @@
 {
-  "name": "Tra cứu ghế khách mời 21.4",
+  "name": "Tra cứu ghế khách mời 22.4",
   "short_name": "Ghế khách mời",
-  "description": "Tra cứu ghế khách mời nhanh trên điện thoại",
+  "description": "Tra cứu ghế khách mời 22.4 nhanh trên điện thoại",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#f8fafc",
