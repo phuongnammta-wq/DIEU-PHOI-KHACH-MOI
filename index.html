@@ -1,84 +1,46 @@
 <!doctype html>
-<html lang="vi">
+<html lang='vi'>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <meta name="theme-color" content="#7a2e16" />
-  <meta name="description" content="Tra cứu ghế đón ANH HÙNG 2026 nhanh trên điện thoại" />
-  <title>Tra cứu ghế đón ANH HÙNG 2026</title>
-  <link rel="manifest" href="manifest.webmanifest" />
-  <link rel="apple-touch-icon" href="icons/icon-192.png" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Tra cứu ghế khách mời 24.4</title>
+  <meta name='theme-color' content='#8b0000'>
+  <link rel='manifest' href='manifest.webmanifest'>
+  <link rel='stylesheet' href='styles.css'>
 </head>
 <body>
-  <div class="app-shell">
-    <header class="hero compact-hero">
-      <div class="badge">Bản tra cứu trên điện thoại</div>
-      <div class="hero-head">
-        <div>
-          <h1>Tra cứu ghế đón ANH HÙNG 2026</h1>
-          <p class="subtitle">Gõ tên là lọc ngay. Kết quả nổi bật luôn hiện ở phía trên để nhìn ghế nhanh hơn, trực quan hơn.</p>
-        </div>
+  <main class='app'>
+    <header class='hero'>
+      <div class='title-wrap'>
+        <p class='eyebrow'>Tra cứu nhanh ghế ngồi</p>
+        <h1>Danh sách khách mời 24.4</h1>
       </div>
+      <section id='featuredResult' class='featured empty' aria-live='polite'>
+        <div class='featured-seat'>Chưa chọn</div>
+        <div class='featured-content'>
+          <div class='featured-name'>Gõ tên để hiện ghế ngồi ngay tại đây</div>
+          <div class='featured-position'>Kết quả sẽ luôn cố định phía trên để không bị nhảy khi tìm kiếm.</div>
+        </div>
+      </section>
+      <label class='search-box'>
+        <span class='search-label'>Tìm khách mời</span>
+        <input id='searchInput' type='search' placeholder='Gõ tên, chức vụ hoặc ghế...' autocomplete='off' spellcheck='false'>
+      </label>
     </header>
 
-    <main>
-      <section class="top-stack" aria-label="Tra cứu nhanh">
-        <section id="featuredResult" class="featured featured-priority" aria-live="polite"></section>
+    <section class='summary-row'>
+      <div class='stat'><span class='stat-label'>Tổng khách mời</span><strong id='totalCount'>0</strong></div>
+      <div class='stat'><span class='stat-label'>Đang hiển thị</span><strong id='visibleCount'>0</strong></div>
+    </section>
 
-        <section class="search-panel search-panel-priority">
-          <label for="searchInput" class="label">Tìm theo tên khách mời</label>
-          <div class="search-row">
-            <div class="input-wrap">
-              <span class="search-icon" aria-hidden="true">🔎</span>
-              <input id="searchInput" type="search" inputmode="search" autocomplete="off" placeholder="Nhập tên, ví dụ: Nguyễn Tấn Ý..." />
-            </div>
-            <button id="clearBtn" type="button" aria-label="Xóa nội dung">Xóa</button>
-          </div>
-
-          <div class="helper-row compact-helper-row">
-            <div id="recordCount" class="record-count"></div>
-            <button id="installBtn" class="secondary hidden" type="button">Cài ra màn hình chính</button>
-          </div>
-
-          <div class="tip-row compact-tip-row">
-            <span class="tip-chip">Gõ không dấu vẫn tìm được</span>
-            <span class="tip-chip">Kết quả nổi bật luôn nằm trên ô tìm kiếm</span>
-          </div>
-        </section>
-      </section>
-
-      <section class="results-wrap">
-        <div class="stats-inline stats-inline-bottom" aria-label="Thống kê nhanh">
-          <article class="mini-stat">
-            <span class="mini-stat-label">Tổng khách mời</span>
-            <strong id="totalGuests" class="mini-stat-value">0</strong>
-          </article>
-          <article class="mini-stat">
-            <span class="mini-stat-label">Đang hiển thị</span>
-            <strong id="visibleGuests" class="mini-stat-value">0</strong>
-          </article>
-        </div>
-
-        <div class="section-head compact-section-head">
-          <div>
-            <div class="section-title">Danh sách khách mời</div>
-            <div id="sectionSubtitle" class="section-subtitle">Đang hiển thị toàn bộ danh sách khách mời.</div>
-          </div>
-        </div>
-
-        <div id="emptyState" class="empty" hidden>Không tìm thấy khách mời phù hợp.</div>
-        <div id="results" class="results"></div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div><strong>Mẹo:</strong> Có thể gõ không dấu, ví dụ <em>nguyen tan y</em>, <em>to lam</em> hoặc chỉ gõ một phần tên.</div>
-      <div id="offlineStatus" class="offline-status"></div>
-    </footer>
-  </div>
-
-  <script src="guests.js"></script>
-  <script src="app.js"></script>
+    <section class='list-card'>
+      <div class='section-head'>
+        <h2>Danh sách khách mời</h2>
+      </div>
+      <div id='guestList' class='guest-list'></div>
+    </section>
+  </main>
+  <script src='guests.js'></script>
+  <script src='app.js'></script>
 </body>
 </html>
