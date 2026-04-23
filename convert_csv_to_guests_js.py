@@ -4,7 +4,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-CSV_NAME = "DANH_SACH_KHACH_MOI_TRA_CUU_GHE_22_4.csv"
+CSV_NAME = "DANH_SACH_KHACH_MOI_TRA_CUU_GHE_ANH_HUNG_2026.csv"
 OUT_NAME = "guests.js"
 
 def clean(value: str) -> str:
