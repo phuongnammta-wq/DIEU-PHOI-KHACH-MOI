@@ -1,46 +1,45 @@
 <!doctype html>
-<html lang='vi'>
+<html lang="vi">
 <head>
-  <meta charset='utf-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <title>Tra cứu ghế khách mời 24.4</title>
-  <meta name='theme-color' content='#8b0000'>
-  <link rel='manifest' href='manifest.webmanifest'>
-  <link rel='stylesheet' href='styles.css'>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Tra cứu ghế khách mời</title>
+  <meta name="theme-color" content="#8b0000">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class='app'>
-    <header class='hero'>
-      <div class='title-wrap'>
-        <p class='eyebrow'>Tra cứu nhanh ghế ngồi</p>
-        <h1>Danh sách khách mời 24.4</h1>
-      </div>
-      <section id='featuredResult' class='featured empty' aria-live='polite'>
-        <div class='featured-seat'>Chưa chọn</div>
-        <div class='featured-content'>
-          <div class='featured-name'>Gõ tên để hiện ghế ngồi ngay tại đây</div>
-          <div class='featured-position'>Kết quả sẽ luôn cố định phía trên để không bị nhảy khi tìm kiếm.</div>
-        </div>
-      </section>
-      <label class='search-box'>
-        <span class='search-label'>Tìm khách mời</span>
-        <input id='searchInput' type='search' placeholder='Gõ tên, chức vụ hoặc ghế...' autocomplete='off' spellcheck='false'>
-      </label>
-    </header>
-
-    <section class='summary-row'>
-      <div class='stat'><span class='stat-label'>Tổng khách mời</span><strong id='totalCount'>0</strong></div>
-      <div class='stat'><span class='stat-label'>Đang hiển thị</span><strong id='visibleCount'>0</strong></div>
+  <div class="bg-pattern"></div>
+  <main class="app">
+    <section class="hero">
+      <div class="badge">Tra cứu nhanh ghế ngồi</div>
+      <h1>Danh sách khách mời</h1>
+      <p class="sub">Gõ tên để lọc ngay. Kết quả nổi bật luôn cố định ở trên để tránh nhảy giật khi tìm kiếm.</p>
     </section>
 
-    <section class='list-card'>
-      <div class='section-head'>
-        <h2>Danh sách khách mời</h2>
-      </div>
-      <div id='guestList' class='guest-list'></div>
+    <section class="result-card" id="resultCard">
+      <div class="result-label">Kết quả nổi bật</div>
+      <div class="result-seat" id="resultSeat">—</div>
+      <div class="result-name" id="resultName">Chưa chọn khách mời</div>
+      <div class="result-pos" id="resultPos">Nhập tên bên dưới để lọc danh sách.</div>
+    </section>
+
+    <section class="search-card">
+      <label for="searchInput" class="search-label">Tìm theo tên khách mời</label>
+      <input id="searchInput" type="search" inputmode="search" autocomplete="off" placeholder="Ví dụ: Trần Quang Phương, Tô Lâm, Lê Ngọc Hải..." />
+    </section>
+
+    <section class="stats">
+      <div>Tổng khách mời: <strong id="totalCount"></strong></div>
+      <div>Đang hiển thị: <strong id="showingCount"></strong></div>
+    </section>
+
+    <section class="list-card">
+      <div class="list-title">Danh sách khách mời</div>
+      <div id="guestList" class="guest-list"></div>
     </section>
   </main>
-  <script src='guests.js'></script>
-  <script src='app.js'></script>
+  <script src="guests.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>

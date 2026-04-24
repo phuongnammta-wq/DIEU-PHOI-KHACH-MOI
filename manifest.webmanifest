@@ -1,8 +1,9 @@
 {
-  "name": "Tra cứu ghế khách mời 24.4",
+  "name": "Tra cứu ghế khách mời",
   "short_name": "Tra cứu ghế",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#f7f1e7",
-  "theme_color": "#8b0000"
+  "background_color": "#f7efe2",
+  "theme_color": "#8b0000",
+  "icons": []
 }

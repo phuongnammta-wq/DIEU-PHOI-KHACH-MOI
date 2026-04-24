@@ -1,104 +1,75 @@
-const guests = (window.GUESTS || []).map((g, index) => ({
-  ...g,
-  _id: index,
-  _search: normalizeText(`${g.rank_name} ${g.position} ${g.seat}`)
-}));
-
-const input = document.getElementById('searchInput');
+const guests = Array.isArray(window.GUESTS) ? window.GUESTS : [];
+const searchInput = document.getElementById('searchInput');
 const guestList = document.getElementById('guestList');
-const featuredResult = document.getElementById('featuredResult');
 const totalCount = document.getElementById('totalCount');
-const visibleCount = document.getElementById('visibleCount');
+const showingCount = document.getElementById('showingCount');
+const resultSeat = document.getElementById('resultSeat');
+const resultName = document.getElementById('resultName');
+const resultPos = document.getElementById('resultPos');
 
-let activeId = null;
-let currentItems = guests.slice();
+totalCount.textContent = guests.length.toString();
 
-totalCount.textContent = guests.length;
-
-function normalizeText(value) {
-  return (value || '')
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
-    .replace(/đ/g, 'd')
-    .replace(/[^a-z0-9\s]/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim();
-}
-
-function rankScore(item, query) {
-  if (!query) return 0;
-  const name = normalizeText(item.rank_name);
-  const seat = normalizeText(item.seat);
-  if (seat === query) return 500;
-  if (name === query) return 450;
-  if (name.startsWith(query)) return 320;
-  if (name.includes(` ${query}`)) return 260;
-  if (item._search.startsWith(query)) return 220;
-  return 120;
-}
-
-function setFeatured(item) {
-  if (!item) {
-    featuredResult.classList.add('empty');
-    featuredResult.innerHTML = `<div class='featured-seat'>Chưa chọn</div><div class='featured-content'><div class='featured-name'>Gõ tên để hiện ghế ngồi ngay tại đây</div><div class='featured-position'>Kết quả sẽ luôn cố định phía trên để không bị nhảy khi tìm kiếm.</div></div>`;
+function renderResult(item){
+  if(!item){
+    resultSeat.textContent = '—';
+    resultName.textContent = 'Chưa chọn khách mời';
+    resultPos.textContent = 'Nhập tên bên dưới để lọc danh sách.';
     return;
   }
-  featuredResult.classList.remove('empty');
-  featuredResult.innerHTML = `<div class='featured-seat'>${item.seat}</div><div class='featured-content'><div class='featured-name'>${escapeHtml(item.rank_name)}</div><div class='featured-position'>${escapeHtml(item.position || 'Không có ghi chú chức vụ')}</div></div>`;
+  resultSeat.textContent = item.seat || '—';
+  resultName.textContent = item.rank_name || '';
+  resultPos.textContent = item.position || '';
 }
 
-function escapeHtml(value) {
-  return String(value || '')
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#039;');
+function card(item){
+  const btn = document.createElement('button');
+  btn.className = 'guest-item';
+  btn.type = 'button';
+  btn.innerHTML = `
+    <div class="guest-top">
+      <div class="guest-name"></div>
+      <div class="guest-seat"></div>
+    </div>
+    <div class="guest-pos"></div>
+  `;
+  btn.querySelector('.guest-name').textContent = item.rank_name || '';
+  btn.querySelector('.guest-seat').textContent = item.seat || '';
+  btn.querySelector('.guest-pos').textContent = item.position || '';
+  btn.addEventListener('click', () => renderResult(item));
+  return btn;
 }
 
-function render(items) {
-  visibleCount.textContent = items.length;
-  if (!items.length) {
-    guestList.innerHTML = `<div class='empty-list'>Không tìm thấy khách mời phù hợp.</div>`;
-    setFeatured(null);
+function filterGuests(query){
+  const q = query.trim().toLowerCase();
+  if(!q) return guests.slice();
+  return guests.filter(g => (g.search || '').includes(q));
+}
+
+function renderList(items){
+  guestList.innerHTML = '';
+  showingCount.textContent = items.length.toString();
+  if(!items.length){
+    const empty = document.createElement('div');
+    empty.className = 'empty';
+    empty.textContent = 'Không tìm thấy khách mời phù hợp.';
+    guestList.appendChild(empty);
+    renderResult(null);
     return;
   }
-  const first = items[0];
-  if (activeId == null || !items.some(item => item._id === activeId)) {
-    activeId = first._id;
-  }
-  const active = items.find(item => item._id === activeId) || first;
-  setFeatured(active);
-  guestList.innerHTML = items.map(item => `
-    <article class='guest-item ${item._id === activeId ? 'active' : ''}' data-id='${item._id}'>
-      <div class='guest-seat'>${escapeHtml(item.seat)}</div>
-      <div>
-        <div class='guest-name'>${escapeHtml(item.rank_name)}</div>
-        <div class='guest-position'>${escapeHtml(item.position || 'Không có ghi chú chức vụ')}</div>
-      </div>
-    </article>
-  `).join('');
+  const top = items[0];
+  renderResult(top);
+  const frag = document.createDocumentFragment();
+  items.forEach(item => frag.appendChild(card(item)));
+  guestList.appendChild(frag);
 }
 
-function applyFilter() {
-  const query = normalizeText(input.value);
-  const items = !query
-    ? guests.slice()
-    : guests
-        .filter(item => item._search.includes(query))
-        .sort((a, b) => rankScore(b, query) - rankScore(a, query) || a._id - b._id);
-  currentItems = items;
-  if (query && items[0]) activeId = items[0]._id;
-  render(items);
-}
-
-guestList.addEventListener('click', event => {
-  const card = event.target.closest('.guest-item');
-  if (!card) return;
-  activeId = Number(card.dataset.id);
-  render(currentItems);
+searchInput.addEventListener('input', (e) => {
+  renderList(filterGuests(e.target.value));
 });
 
-input.addEventListener('input', applyFilter);
-render(guests.slice());
+renderList(guests);
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js').catch(() => {});
+  });
+}
