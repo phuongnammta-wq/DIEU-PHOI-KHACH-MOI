@@ -1,44 +1,69 @@
 <!doctype html>
 <html lang="vi">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Tra cứu ghế khách mời</title>
-  <meta name="theme-color" content="#8b0000">
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Tra cứu ghế khách mời 25.4.2</title>
+  <meta name="theme-color" content="#8b1e1e" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="bg-pattern"></div>
-  <main class="app">
-    <section class="hero">
-      <div class="badge">Tra cứu nhanh ghế ngồi</div>
-      <h1>Danh sách khách mời</h1>
-      <p class="sub">Gõ tên để lọc ngay. Kết quả nổi bật luôn cố định ở trên để tránh nhảy giật khi tìm kiếm.</p>
+  <div class="page-bg"></div>
+  <main class="app-shell">
+    <header class="hero">
+      <div class="hero-badge">Tra cứu nhanh trên điện thoại</div>
+      <h1>Tra cứu ghế khách mời 25.4.2</h1>
+      <p>Tìm theo tất cả trường thông tin: tên, chức danh, đơn vị, ghế, khu, dòng mô tả đầy đủ.</p>
+      <div class="hero-tags">
+        <span>Tên</span>
+        <span>Chức danh</span>
+        <span>Đơn vị</span>
+        <span>Ghế</span>
+        <span>Khu</span>
+      </div>
+    </header>
+
+    <section class="result-panel" id="resultPanel">
+      <div class="panel-head">
+        <div class="section-title">Kết quả nổi bật</div>
+        <div class="mini-meta" id="miniMeta">0 kết quả</div>
+      </div>
+      <div class="result-empty" id="resultEmpty">Mở ra là thấy toàn bộ danh sách. Gõ tên hoặc bất kỳ thông tin nào để lọc nhanh.</div>
+      <article class="result-card hidden" id="resultCard">
+        <div class="seat-badge-wrap">
+          <div class="seat-badge" id="seatBadge">A1</div>
+          <div class="seat-note hidden" id="seatNote"></div>
+        </div>
+        <div class="result-body">
+          <h2 id="resultName"></h2>
+          <div class="result-sub" id="resultSub"></div>
+          <p id="resultPosition"></p>
+          <div class="result-full hidden" id="resultFull"></div>
+        </div>
+      </article>
     </section>
 
-    <section class="result-card" id="resultCard">
-      <div class="result-label">Kết quả nổi bật</div>
-      <div class="result-seat" id="resultSeat">—</div>
-      <div class="result-name" id="resultName">Chưa chọn khách mời</div>
-      <div class="result-pos" id="resultPos">Nhập tên bên dưới để lọc danh sách.</div>
+    <section class="search-panel">
+      <label class="search-label" for="searchInput">Tìm kiếm theo tất cả trường thông tin</label>
+      <div class="search-wrap">
+        <input id="searchInput" type="search" placeholder="Ví dụ: tô lâm, quân khu, quảng ngãi, A2, BCHQS..." autocomplete="off" />
+        <button id="clearBtn" type="button" aria-label="Xóa tìm kiếm">×</button>
+      </div>
     </section>
 
-    <section class="search-card">
-      <label for="searchInput" class="search-label">Tìm theo tên khách mời</label>
-      <input id="searchInput" type="search" inputmode="search" autocomplete="off" placeholder="Ví dụ: Trần Quang Phương, Tô Lâm, Lê Ngọc Hải..." />
+    <section class="meta-row">
+      <div class="meta-chip">Tổng <strong id="totalCount">0</strong> dòng tra cứu</div>
+      <div class="meta-chip">Đang hiển thị <strong id="visibleCount">0</strong></div>
     </section>
 
-    <section class="stats">
-      <div>Tổng khách mời: <strong id="totalCount"></strong></div>
-      <div>Đang hiển thị: <strong id="showingCount"></strong></div>
-    </section>
-
-    <section class="list-card">
-      <div class="list-title">Danh sách khách mời</div>
-      <div id="guestList" class="guest-list"></div>
+    <section class="list-panel">
+      <div class="section-title">Danh sách tra cứu</div>
+      <div class="list-desc">Chạm vào một dòng để ghim kết quả ở phía trên.</div>
+      <div class="guest-list" id="guestList"></div>
     </section>
   </main>
+
   <script src="guests.js"></script>
   <script src="app.js"></script>
 </body>

@@ -1,17 +1,21 @@
-# Tra cứu ghế khách mời
+# Tra cứu ghế khách mời 25.4.2
 
-Mở `index.html` hoặc đưa toàn bộ file lên GitHub Pages để chạy như website.
+## Cách đưa lên GitHub Pages
+1. Giải nén file zip.
+2. Upload toàn bộ file trong thư mục này lên repo GitHub.
+3. Vào **Settings → Pages**.
+4. Chọn nhánh `main`, thư mục `/ (root)`.
+5. Lưu lại và chờ GitHub Pages xuất bản.
 
-## Cập nhật lên GitHub
-1. Giải nén gói zip.
-2. Vào repo GitHub hiện tại.
-3. Chọn **Add file** → **Upload files**.
-4. Kéo toàn bộ file trong thư mục này lên để ghi đè bản cũ.
-5. Commit thay đổi.
-6. Chờ GitHub Pages cập nhật.
+## Cập nhật dữ liệu
+- File dữ liệu nguồn: `DANH_SACH_KHACH_MOI_TRA_CUU_GHE_25_4_2.csv`
+- File web dùng trực tiếp: `guests.js`
 
-## Dữ liệu
-- `DANH_SACH_KHACH_MOI_TRA_CUU_GHE_ANH_HUNG_2026_MOI.csv`
-- `guests.js`
-
-Nếu danh sách thay đổi, chỉ cần thay `guests.js` hoặc tạo lại từ CSV mới.
+## Tìm kiếm
+Bản này cho phép tìm theo tất cả trường thông tin:
+- tên
+- chức danh
+- đơn vị
+- ghế
+- khu
+- nội dung đầy đủ của từng ô
